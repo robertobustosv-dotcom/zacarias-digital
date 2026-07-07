@@ -2,7 +2,7 @@ const scenes = [
   {
     title: "Las aventuras de Zacarías",
     mood: "warm",
-    image: "assets/illustrations/scene-1.png",
+    image: "assets/illustrations/scene-1.webp.png",
     text: [
       "Autora: Claudia Oliva.",
       "Editado por Roberto Bustos.",
@@ -14,7 +14,7 @@ const scenes = [
   {
     title: "La puerta se abrió",
     mood: "warm",
-    image: "assets/illustrations/scene-2.png",
+    image: "assets/illustrations/scene-2.webp.png",
     text: [
       "Zacarías era un gato, que en su hermoso hogar vivía, amarillo su pelaje y suave como melodía.",
       "Esta es una corta historia que contarte debería; si me acompañas hasta el final, te divertirás con un gatito y su valentía.",
@@ -29,7 +29,7 @@ const scenes = [
   {
     title: "El camión se aleja",
     mood: "adventure",
-    image: "assets/illustrations/scene-3.png",
+    image: "assets/illustrations/scene-3.webp.png",
     text: [
       "El exterior era un misterio, que en su mente despertaba alegría.",
       "Sin mirar atrás, a la calle se dirigía; sus bigotes le temblaban, pero su alma se encendía.",
@@ -43,7 +43,7 @@ const scenes = [
   {
     title: "El gorrión de la frutería",
     mood: "playful",
-    image: "assets/illustrations/scene-4.png",
+    image: "assets/illustrations/scene-4.webp.png",
     text: [
       "La mirada levantó hacia el tejado de una frutería; un gorrión cantor fue su objetivo: perseguirlo y cazarlo quería.",
       "Calles y calles recorrió, hasta que perdido se vería. Él no estaba acostumbrado a la dificultad que la calle le ofrecía.",
@@ -56,7 +56,7 @@ const scenes = [
   {
     title: "El gusano travieso",
     mood: "playful",
-    image: "assets/illustrations/scene-5.png",
+    image: "assets/illustrations/scene-5.webp.png",
     text: [
       "Entonces comenzó la búsqueda, y entre árboles se introducía, rogando por algo de suerte: su nuevo objetivo conseguiría.",
       "Él pensaba que era buen cazador y que muchas capacidades tenía, pero cuando de atrapar gusanos hablamos, habilidades no poseía.",
@@ -71,7 +71,7 @@ const scenes = [
   {
     title: "La pista del ratón",
     mood: "mystery",
-    image: "assets/illustrations/scene-6.png",
+    image: "assets/illustrations/scene-6.webp.png",
     text: [
       "Porque un mal sabor en la boca de seguro te dejaría, y además que un gran cazador como tú, a un gusanito no se comería.",
       "Aunque proteínas yo obtendría, tu sabor no me convencería; muy flaquito tú te encuentras, comentó el gato Zacarías.",
@@ -86,7 +86,7 @@ const scenes = [
   {
     title: "Zacarías se arrepiente",
     mood: "sad",
-    image: "assets/illustrations/scene-7.png",
+    image: "assets/illustrations/scene-7.webp.png",
     text: [
       "La cacería no fue fácil; el ratón de él se reía, escondido entre los desagües, muy rápido escaparía.",
       "Muy pequeño y peludo era, de agilidad no carecía; en nada se parecía a los ratones de juguete, que en su casa perseguía.",
@@ -102,7 +102,7 @@ const scenes = [
   {
     title: "Una familia cuidadosa",
     mood: "hope",
-    image: "assets/illustrations/scene-8.png",
+    image: "assets/illustrations/scene-8.webp.png",
     text: [
       "Todo cambió un día, cuando en un auto llegaría una pareja cuidadosa, que su cabecita acariciaría.",
       "Temeroso Zacarías se acercaba a la familia; con mordiscos y rasguños, sus límites imponía.",
@@ -115,7 +115,7 @@ const scenes = [
   {
     title: "Un nuevo hogar",
     mood: "happy",
-    image: "assets/illustrations/scene-9.png",
+    image: "assets/illustrations/scene-9.webp.png",
     text: [
       "Aunque los dueños no sabían, él en las noches se escabullía: entraba por el patio de la casa, y calentito en el living dormía.",
       "Una noche lo pillaron, y mucho asombro causaría: divertida situación, la del gato Zacarías.",
