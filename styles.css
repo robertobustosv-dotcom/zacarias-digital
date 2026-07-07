@@ -42,7 +42,7 @@ button {
   background:
     radial-gradient(circle at 70% 20%, rgba(255,255,255,.65), transparent 26%),
     linear-gradient(145deg, rgba(116, 67, 28, .28), rgba(255, 239, 195, .72)),
-    url("assets/pages/page-1.png");
+    url("assets/pages/page-1.webp");
   background-size: cover;
   background-position: center;
 }
