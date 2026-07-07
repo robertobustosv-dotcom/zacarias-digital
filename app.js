@@ -1,248 +1,303 @@
 const scenes = [
   {
-    title: 'Portada', image: 'assets/scenes/scene-1.png', mood: 'warm', hotspot: [50, 62],
-    mission: 'Toca a Zacarías para comenzar',
-    bubble: 'Zacarías está listo para contarte su aventura.',
-    audio: 'assets/audio/narration/page-1.mp3', duration: 9000,
-    text: ['Autora: Claudia Oliva', 'Editado: Roberto Bustos', 'Adaptado de una historia real.'], fx: 'spark'
+    title: "Un hogar lleno de vida",
+    mood: "warm",
+    image: "assets/page-1.png",
+    text: [
+      "Autora: Claudia Oliva.",
+      "Editado por Roberto Bustos.",
+      "Adaptado de una historia real."
+    ],
+    duration: 9000
   },
   {
-    title: 'La mudanza', image: 'assets/scenes/scene-2.png', mood: 'happy', hotspot: [46, 55],
-    mission: 'Toca a Zacarías',
-    bubble: 'En medio de cajas y maletas, Zacarías vio una oportunidad de aventura.',
-    audio: 'assets/audio/narration/page-2.mp3', duration: 62000,
-    text: ['Zacarías era un gato, que en su hermoso hogar vivía, amarillo su pelaje y suave como melodía.', 'Todo comenzó un frío día, cuando la puerta de una casa sin querer se abría.', 'Nadie se había dado cuenta, ya que mucho movimiento había: cajas, bolsos y maletas distraían.', 'Silencioso se escabullía hacia la libertad que se le ofrecía.'], fx: 'home'
+    title: "La puerta se abrió",
+    mood: "warm",
+    image: "assets/page-2.png",
+    text: [
+      "Zacarías era un gato que en su hermoso hogar vivía, amarillo su pelaje y suave como melodía.",
+      "Todo comenzó un frío día, cuando las hojas de los árboles se movían y la puerta de una casa sin querer se abría."
+    ],
+    duration: 18000
   },
   {
-    title: 'El camión se aleja', image: 'assets/scenes/scene-3.png', mood: 'curious', hotspot: [72, 38],
-    mission: 'Toca el camión de mudanzas',
-    bubble: 'El camión se aleja… pero Zacarías todavía cree que todo será diversión.',
-    audio: 'assets/audio/narration/page-3.mp3', duration: 56000,
-    text: ['El exterior era un misterio que en su mente despertaba alegría.', 'Sin mirar atrás, a la calle se dirigía; sus bigotes le temblaban, pero su alma se encendía.', 'Los sonidos, los aromas, todo nuevo le sorprendía.', 'Fue así como, distraído, su familia desaparecía.', 'Un camión gigante fue lo último que de su hogar vería.'], fx: 'truck'
+    title: "La gran aventura",
+    mood: "adventure",
+    image: "assets/page-3.png",
+    text: [
+      "El exterior era un misterio que en su mente despertaba alegría.",
+      "Sin mirar atrás, a la calle se dirigía. Sus bigotes le temblaban, pero su alma se encendía.",
+      "Un camión gigante fue lo último que de su hogar vería."
+    ],
+    duration: 21000
   },
   {
-    title: 'El gorrión cantor', image: 'assets/scenes/scene-4.png', mood: 'playful', hotspot: [28, 70],
-    mission: 'Toca al gorrión',
-    bubble: '¡No me comas! —dijo el gorrión—. Si me consigues un gusanito, te daré jamón.',
-    audio: 'assets/audio/narration/page-4.mp3', duration: 60000,
-    text: ['La mirada levantó hacia el tejado de una frutería; un gorrión cantor fue su objetivo.', 'Calles y calles recorrió, hasta que perdido se vería.', 'El hambre apretaba fuerte y el frío lo perseguía.', 'De un hábil zarpazo, al gorrión atraparía.', 'Pero el ave le propuso un trato inesperado.'], fx: 'bird'
+    title: "El gorrión de la frutería",
+    mood: "playful",
+    image: "assets/page-4.png",
+    text: [
+      "La mirada levantó hacia el tejado de una frutería.",
+      "Un gorrión cantor fue su objetivo: perseguirlo y cazarlo quería.",
+      "—¡No me comas! —dijo el ave—. Si me consigues un gusanito, un trozo de jamón a cambio yo te daría."
+    ],
+    duration: 23000
   },
   {
-    title: 'El gusano', image: 'assets/scenes/scene-5.png', mood: 'playful', hotspot: [28, 73],
-    mission: 'Toca al gusano',
-    bubble: '¡No me comas! —gritó el gusano—. Soy muy flaquito y tengo una mejor idea.',
-    audio: 'assets/audio/narration/page-5.mp3', duration: 65000,
-    text: ['Entonces comenzó la búsqueda, y entre árboles se introducía.', 'Zacarías pensaba que era buen cazador, pero atrapar gusanos no era su habilidad.', 'Cansado y hambriento, por plazas y calles corría.', 'Hasta que fuera de una barbería encontró un gusano travieso bajo una piedra.', 'Entre sus garritas lo atrapó para sacarlo de la guarida.'], fx: 'leaf'
+    title: "El gusano travieso",
+    mood: "playful",
+    image: "assets/page-5.png",
+    text: [
+      "Entonces comenzó la búsqueda, y entre árboles se introducía, rogando por algo de suerte.",
+      "Fuera de una barbería, un gusano travieso y juguetón bajo una piedrecita vivía.",
+      "—¡No me comas! —gritó el gusano con grandes ojos llorosos."
+    ],
+    duration: 23000
   },
   {
-    title: 'La panadería', image: 'assets/scenes/scene-6.png', mood: 'chase', hotspot: [23, 83],
-    mission: 'Toca al ratón que escapa',
-    bubble: '¡El ratón corrió hacia la panadería! Zacarías sale tras él.',
-    audio: 'assets/audio/narration/page-6.mp3', duration: 74000,
-    text: ['El gusano le hizo ver que el gorrión lo había engañado.', '—Si sigues a aquel ratón que nos mira, más diversión tú tendrías.', 'Entusiasmado, Zacarías con audacia se movía.', 'Persiguió al ratón hasta la calle de la panadería.'], fx: 'mouse'
+    title: "Una nueva pista",
+    mood: "mystery",
+    image: "assets/page-6.png",
+    text: [
+      "Impactado Zacarías, en la cuenta caería: había sido engañado por el gorrión de la frutería.",
+      "—Una idea te puedo dar —el gusano respondía—. Si sigues a aquel ratón que nos mira, más diversión tendrías."
+    ],
+    duration: 21000
   },
   {
-    title: 'Solo en la calle', image: 'assets/scenes/scene-7.png', mood: 'sad', hotspot: [50, 62],
-    mission: 'Acompaña a Zacarías',
-    bubble: 'Zacarías tiene frío, miedo y necesita un hogar seguro.',
-    audio: 'assets/audio/narration/page-7.mp3', duration: 72000,
-    text: ['La cacería no fue fácil; el ratón de él se reía y muy rápido escaparía.', 'Decepcionado, Zacarías ya nada le divertía.', 'El cansancio, el sueño y el miedo el cuerpo le recorrían.', '—Muy arrepentido estoy de escaparme ese día.', 'Triste caminaba por las calles y veredas, pero nadie le entendía.'], fx: 'rain'
+    title: "El cansancio de Zacarías",
+    mood: "sad",
+    image: "assets/page-7.png",
+    text: [
+      "Decepcionado, Zacarías ya nada le divertía.",
+      "El cansancio, el sueño y el miedo el cuerpo le recorrían.",
+      "Muy arrepentido estaba de escaparse ese día. No sabía de los peligros y las consecuencias que le traería."
+    ],
+    duration: 24000
   },
   {
-    title: 'Una nueva familia', image: 'assets/scenes/scene-8.png', mood: 'hope', hotspot: [51, 58],
-    mission: 'Toca a la familia',
-    bubble: 'Con paciencia y amor, Zacarías comenzó a confiar.',
-    audio: 'assets/audio/narration/page-8.mp3', duration: 52000,
-    text: ['Todo cambió un día, cuando en un auto llegaría una pareja cuidadosa.', 'Temeroso, Zacarías se acercaba a la familia.', '—Aquí nadie te hará daño, no te debes defender.', 'Mostrándole mucho amor, las largas jornadas de frío en calor se convertirían.'], fx: 'heart'
+    title: "Una familia cuidadosa",
+    mood: "hope",
+    image: "assets/page-8.png",
+    text: [
+      "Todo cambió un día, cuando en un auto llegaría una pareja cuidadosa que su cabecita acariciaría.",
+      "Mostrándole mucho amor, poco a poco se acercarían, y las largas jornadas de frío en calor se convertirían."
+    ],
+    duration: 21000
   },
   {
-    title: 'Hogar feliz', image: 'assets/scenes/scene-8.png', mood: 'warm', hotspot: [62, 56],
-    mission: 'Toca la chimenea',
-    bubble: 'Zacarías aprendió que su hogar era un lugar seguro. Fin.',
-    audio: 'assets/audio/narration/page-9.mp3', duration: 60000,
-    text: ['Fue así como lo adoptaron, y de a poco se acostumbraría a su nuevo hogar.', 'Desde esa aventura, la puerta de la casa fue el límite de lo permitido.', 'Era mejor hacer caso a sus humanos: todo era por su seguridad.', 'Junto a dos gatitas más, su vida compartiría.', 'FIN.'], fx: 'homeEnd'
+    title: "Un nuevo hogar",
+    mood: "happy",
+    image: "assets/page-9.png",
+    text: [
+      "Fue así como lo adoptaron, y de a poco se acostumbraría a su nuevo hogar, con mucho amor y sin falta de comida.",
+      "Desde esa aventura, la vida al gato le cambiaría.",
+      "Era mejor no salir y hacer caso a sus humanos, porque todo era por su seguridad y por la mejor compañía."
+    ],
+    duration: 24000
   }
 ];
 
-let index = Number(localStorage.getItem('zacarias_scene') || 0);
-let auto = false;
-let musicOn = false;
-let audioCtx = null;
-let musicTimer = null;
-let musicNodes = [];
-let narration = null;
-let idleTimer = null;
-let fallbackTimer = null;
+const cover = document.getElementById("cover");
+const reader = document.getElementById("reader");
+const startBtn = document.getElementById("startBtn");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const narrationBtn = document.getElementById("narrationBtn");
+const musicBtn = document.getElementById("musicBtn");
 
-const $ = id => document.getElementById(id);
-const cover = $('cover');
-const reader = $('reader');
-const storybook = $('storybook');
-const sceneImage = $('sceneImage');
-const titleEl = $('title');
-const textEl = $('text');
-const counterEl = $('counter');
-const missionEl = $('mission');
-const effectsEl = $('effects');
-const bubbleEl = $('bubble');
-const hotspotEl = $('hotspot');
+const sceneLabel = document.getElementById("sceneLabel");
+const sceneTitle = document.getElementById("sceneTitle");
+const sceneText = document.getElementById("sceneText");
+const sceneImage = document.getElementById("sceneImage");
 
-function startReader(){
-  cover.classList.add('hidden');
-  reader.classList.remove('hidden');
-  render();
-  showControlsTemporarily();
+let currentScene = 0;
+let narrationEnabled = true;
+let musicEnabled = true;
+let autoTimer = null;
+let audioContext = null;
+let musicInterval = null;
+let activeOscillators = [];
+
+function renderScene(index) {
+  currentScene = Math.max(0, Math.min(index, scenes.length - 1));
+  const scene = scenes[currentScene];
+
+  clearTimeout(autoTimer);
+  stopBrowserNarration();
+
+  reader.classList.toggle("is-sad", scene.mood === "sad");
+
+  sceneLabel.textContent = `Escena ${currentScene + 1} de ${scenes.length}`;
+  sceneTitle.textContent = scene.title;
+  sceneText.innerHTML = scene.text.map(paragraph => `<p>${paragraph}</p>`).join("");
+  sceneImage.src = scene.image;
+
+  prevBtn.style.visibility = currentScene === 0 ? "hidden" : "visible";
+  nextBtn.style.visibility = currentScene === scenes.length - 1 ? "hidden" : "visible";
+
+  if (narrationEnabled) {
+    playNarration(scene);
+  }
+
+  if (musicEnabled) {
+    startMusic(scene.mood);
+  }
+
+  autoTimer = setTimeout(() => {
+    if (currentScene < scenes.length - 1) {
+      renderScene(currentScene + 1);
+    }
+  }, scene.duration);
 }
 
-function render(){
-  const s = scenes[index];
-  localStorage.setItem('zacarias_scene', index);
-  sceneImage.src = s.image;
-  titleEl.textContent = s.title;
-  counterEl.textContent = `${index + 1} / ${scenes.length}`;
-  textEl.innerHTML = s.text.map((p, n) => `<p data-line="${n}">${p}</p>`).join('');
-  missionEl.textContent = s.mission;
-  hotspotEl.style.left = s.hotspot[0] + '%';
-  hotspotEl.style.top = s.hotspot[1] + '%';
-  $('prevBtn').disabled = index === 0;
-  $('nextBtn').disabled = index === scenes.length - 1;
-  bubbleEl.classList.remove('show');
-  effects(s.fx);
-  if (musicOn) startMusicForScene();
+function playNarration(scene) {
+  const mp3 = new Audio(`assets/audio/narration/page-${currentScene + 1}.mp3`);
+
+  mp3.onloadeddata = () => {
+    mp3.play().catch(() => fallbackNarration(scene));
+    mp3.onended = () => {
+      if (currentScene < scenes.length - 1) {
+        renderScene(currentScene + 1);
+      }
+    };
+  };
+
+  mp3.onerror = () => {
+    fallbackNarration(scene);
+  };
+
+  mp3.load();
 }
 
-function next(){ stopNarration(); if(index < scenes.length - 1){ index++; render(); if(auto) playNarrationThenNext(); } }
-function prev(){ stopNarration(); if(index > 0){ index--; render(); if(auto) playNarrationThenNext(); } }
+function fallbackNarration(scene) {
+  if (!("speechSynthesis" in window)) return;
 
-function showBubble(){
-  bubbleEl.textContent = scenes[index].bubble;
-  bubbleEl.classList.add('show');
-  setTimeout(()=>bubbleEl.classList.remove('show'), 4200);
+  const text = `${scene.title}. ${scene.text.join(" ")}`;
+  const utterance = new SpeechSynthesisUtterance(text);
+  const voices = speechSynthesis.getVoices();
+
+  const preferredVoice =
+    voices.find(v => v.lang.startsWith("es") && /female|mujer|paulina|monica|google/i.test(v.name)) ||
+    voices.find(v => v.lang.startsWith("es")) ||
+    voices[0];
+
+  if (preferredVoice) utterance.voice = preferredVoice;
+
+  utterance.lang = "es-CL";
+  utterance.rate = scene.mood === "sad" ? 0.72 : 0.82;
+  utterance.pitch = scene.mood === "sad" ? 0.82 : 1.05;
+  utterance.volume = 0.95;
+
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utterance);
 }
 
-function effects(type){
-  effectsEl.innerHTML = '';
-  if(type === 'truck' || type === 'leaf' || type === 'home') addMany('leaf','🍂',14);
-  if(type === 'bird') addMany('bird','🐦',4);
-  if(type === 'mouse') addMany('mouse','🐭',4);
-  if(type === 'rain') for(let n=0;n<45;n++) add('rain','',Math.random()*100,Math.random()*-100,n*.03);
-  if(type === 'heart') { addMany('heart','💛',10); addMany('spark','✨',6); }
-  if(type === 'homeEnd') { addMany('spark','✨',8); for(let n=0;n<9;n++) add('smoke','☁️',50+Math.random()*24,55+Math.random()*12,n*.25); }
-  if(type === 'spark') addMany('spark','✨',12);
-  if(type === 'home') addMany('wind','〰️',4);
-}
-function addMany(cls,content,num){ for(let n=0;n<num;n++) add(cls,content,Math.random()*100,Math.random()*88,n*.25); }
-function add(cls,content,left,top,delay){
-  const e = document.createElement('span');
-  e.className = cls; e.textContent = content;
-  e.style.left = left + '%'; e.style.top = top + '%'; e.style.animationDelay = delay + 's';
-  effectsEl.appendChild(e);
-}
-
-async function playNarrationThenNext(){
-  const s = scenes[index];
-  $('narrationBtn').textContent = '⏸';
-  await playNarration(s);
-  $('narrationBtn').textContent = '🔊';
-  if(auto && index < scenes.length - 1){
-    setTimeout(()=>{ if(auto){ index++; render(); playNarrationThenNext(); } }, 900);
-  } else if(index === scenes.length - 1) {
-    auto = false; $('autoBtn').textContent = '▶';
+function stopBrowserNarration() {
+  if ("speechSynthesis" in window) {
+    speechSynthesis.cancel();
   }
 }
 
-function playNarration(scene){
-  stopNarration(false);
-  highlightByTime(scene.duration);
-  return new Promise(resolve => {
-    narration = new Audio(scene.audio);
-    narration.onended = resolve;
-    narration.onerror = () => {
-      // Fallback: mantiene los tiempos de escena aunque no exista MP3 todavía.
-      fallbackTimer = setTimeout(resolve, scene.duration);
-    };
-    narration.play().catch(()=>{
-      fallbackTimer = setTimeout(resolve, scene.duration);
-    });
+function startMusic(mood) {
+  if (!audioContext) {
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  }
+
+  stopMusic();
+
+  const notesByMood = {
+    warm: [261.63, 329.63, 392.0, 523.25],
+    adventure: [293.66, 369.99, 440.0, 587.33],
+    playful: [329.63, 392.0, 493.88, 659.25],
+    mystery: [246.94, 293.66, 369.99, 493.88],
+    sad: [220.0, 261.63, 329.63, 440.0],
+    hope: [261.63, 349.23, 392.0, 523.25],
+    happy: [261.63, 329.63, 392.0, 659.25]
+  };
+
+  const notes = notesByMood[mood] || notesByMood.warm;
+  let step = 0;
+
+  musicInterval = setInterval(() => {
+    playSoftNote(notes[step % notes.length], mood === "sad" ? 0.035 : 0.05);
+    step += 1;
+  }, mood === "sad" ? 1450 : 1150);
+}
+
+function playSoftNote(frequency, volume) {
+  if (!audioContext) return;
+
+  const oscillator = audioContext.createOscillator();
+  const gain = audioContext.createGain();
+
+  oscillator.type = "sine";
+  oscillator.frequency.value = frequency;
+
+  gain.gain.setValueAtTime(0, audioContext.currentTime);
+  gain.gain.linearRampToValueAtTime(volume, audioContext.currentTime + 0.08);
+  gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 1.3);
+
+  oscillator.connect(gain);
+  gain.connect(audioContext.destination);
+
+  oscillator.start();
+  oscillator.stop(audioContext.currentTime + 1.35);
+
+  activeOscillators.push(oscillator);
+}
+
+function stopMusic() {
+  if (musicInterval) {
+    clearInterval(musicInterval);
+    musicInterval = null;
+  }
+
+  activeOscillators.forEach(oscillator => {
+    try {
+      oscillator.stop();
+    } catch (error) {}
   });
+
+  activeOscillators = [];
 }
 
-function stopNarration(resetButton = true){
-  if(narration){ narration.pause(); narration.currentTime = 0; narration = null; }
-  clearTimeout(fallbackTimer);
-  document.querySelectorAll('.active-line').forEach(e=>e.classList.remove('active-line'));
-  if(resetButton) $('narrationBtn').textContent = '🔊';
-}
+startBtn.addEventListener("click", () => {
+  cover.classList.add("hidden");
+  reader.classList.remove("hidden");
+  renderScene(0);
+});
 
-function highlightByTime(total){
-  const lines = [...textEl.querySelectorAll('p')];
-  lines.forEach(l=>l.classList.remove('active-line'));
-  if(!lines.length) return;
-  const step = Math.max(1800, total / lines.length);
-  lines.forEach((line,n)=> setTimeout(()=>{
-    lines.forEach(l=>l.classList.remove('active-line'));
-    line.classList.add('active-line');
-  }, n*step));
-}
+prevBtn.addEventListener("click", () => {
+  renderScene(currentScene - 1);
+});
 
-function toggleNarration(){
-  if(narration && !narration.paused){ stopNarration(); return; }
-  playNarrationThenNext();
-}
-function toggleAuto(){
-  auto = !auto;
-  $('autoBtn').textContent = auto ? '⏸' : '▶';
-  if(auto) playNarrationThenNext(); else stopNarration();
-}
+nextBtn.addEventListener("click", () => {
+  renderScene(currentScene + 1);
+});
 
-function ensureAudio(){
-  audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
-  if(audioCtx.state === 'suspended') audioCtx.resume();
-}
-function stopMusic(){
-  clearTimeout(musicTimer);
-  musicNodes.forEach(n=>{ try{ n.stop?.(); n.disconnect?.(); }catch(e){} });
-  musicNodes = []; musicOn = false; $('musicBtn').textContent = '♫';
-}
-function tone(freq,start,dur,vol){
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
-  osc.type = 'triangle'; osc.frequency.value = freq;
-  gain.gain.setValueAtTime(0,start);
-  gain.gain.linearRampToValueAtTime(vol,start+.08);
-  gain.gain.exponentialRampToValueAtTime(.0001,start+dur);
-  osc.connect(gain); gain.connect(audioCtx.destination);
-  osc.start(start); osc.stop(start+dur+.1); musicNodes.push(osc,gain);
-}
-function startMusicForScene(){
-  clearTimeout(musicTimer); musicNodes.forEach(n=>{try{n.stop?.();n.disconnect?.()}catch(e){}}); musicNodes=[];
-  ensureAudio(); musicOn = true; $('musicBtn').textContent = '♬';
-  const sad = scenes[index].mood === 'sad';
-  const notes = sad ? [220,261.6,329.6,392,329.6,261.6] : [261.6,329.6,392,523.2,392,329.6];
-  const step = sad ? .74 : .55;
-  const vol = sad ? .010 : .014;
-  const now = audioCtx.currentTime + .05;
-  notes.forEach((f,n)=> tone(f, now + n*step, step*.92, vol));
-  musicTimer = setTimeout(()=>{ if(musicOn) startMusicForScene(); }, notes.length*step*1000);
-}
-function toggleMusic(){ musicOn ? stopMusic() : startMusicForScene(); }
+narrationBtn.addEventListener("click", () => {
+  narrationEnabled = !narrationEnabled;
+  narrationBtn.textContent = narrationEnabled ? "🔊" : "🔇";
 
-function showControlsTemporarily(){
-  storybook.classList.remove('idle');
-  clearTimeout(idleTimer);
-  idleTimer = setTimeout(()=>storybook.classList.add('idle'), 3200);
-}
+  if (narrationEnabled) {
+    playNarration(scenes[currentScene]);
+  } else {
+    stopBrowserNarration();
+  }
+});
 
-$('startBtn').onclick = startReader;
-$('nextBtn').onclick = next;
-$('prevBtn').onclick = prev;
-$('hotspot').onclick = showBubble;
-$('mission').onclick = showBubble;
-$('narrationBtn').onclick = toggleNarration;
-$('autoBtn').onclick = toggleAuto;
-$('musicBtn').onclick = toggleMusic;
-$('fullBtn').onclick = () => document.documentElement.requestFullscreen?.();
-storybook.addEventListener('mousemove', showControlsTemporarily);
-storybook.addEventListener('touchstart', showControlsTemporarily, {passive:true});
-window.addEventListener('keydown', e=>{ if(e.key==='ArrowRight') next(); if(e.key==='ArrowLeft') prev(); if(e.key===' ') toggleAuto(); });
-if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+musicBtn.addEventListener("click", () => {
+  musicEnabled = !musicEnabled;
+  musicBtn.textContent = musicEnabled ? "🎵" : "🔕";
+
+  if (musicEnabled) {
+    startMusic(scenes[currentScene].mood);
+  } else {
+    stopMusic();
+  }
+});
+
+window.addEventListener("beforeunload", () => {
+  stopBrowserNarration();
+  stopMusic();
+});
