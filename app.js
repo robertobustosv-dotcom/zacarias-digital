@@ -149,36 +149,15 @@ let audioContext = null;
 let musicInterval = null;
 let activeOscillators = [];
 
-function renderScene(index) {
-  currentScene = Math.max(0, Math.min(index, scenes.length - 1));
-  const scene = scenes[currentScene];
-
-  clearTimeout(autoTimer);
-  stopBrowserNarration();
-
-  reader.classList.toggle("is-sad", scene.mood === "sad");
-
-  sceneLabel.textContent = `Escena ${currentScene + 1} de ${scenes.length}`;
-  sceneTitle.textContent = scene.title;
-  sceneText.innerHTML = scene.text.map(paragraph => `<p>${paragraph}</p>`).join("");
-  sceneImage.src = scene.image;
-
-  prevBtn.style.visibility = currentScene === 0 ? "hidden" : "visible";
-  nextBtn.style.visibility = currentScene === scenes.length - 1 ? "hidden" : "visible";
-
-  if (narrationEnabled) {
-    playNarration(scene);
-  }
-
-  if (musicEnabled) {
+if (musicEnabled) {
     startMusic(scene.mood);
   }
 
-  autoTimer = setTimeout(() => {
-    if (currentScene < scenes.length - 1) {
-      renderScene(currentScene + 1);
-    }
-  }, scene.duration);
+autoTimer = setTimeout(() => {
+  if (currentScene < scenes.length - 1) {
+    renderScene(currentScene + 1);
+  }
+}, scene.duration);
 }
 
 function playNarration(scene) {
@@ -219,8 +198,14 @@ function fallbackNarration(scene) {
   utterance.pitch = scene.mood === "sad" ? 0.82 : 1.05;
   utterance.volume = 0.95;
 
-  speechSynthesis.cancel();
-  speechSynthesis.speak(utterance);
+utterance.onend = () => {
+  if (currentScene < scenes.length - 1) {
+    renderScene(currentScene + 1);
+  }
+};
+
+speechSynthesis.cancel();
+speechSynthesis.speak(utterance);
 }
 
 function stopBrowserNarration() {
