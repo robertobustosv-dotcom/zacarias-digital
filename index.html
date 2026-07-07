@@ -1,54 +1,48 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#f6cdbd" />
-  <title>Las aventuras de Zacarías</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Las Aventuras de Zacarías</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <main id="app" class="app">
+  <main id="app" class="storybook">
     <section id="cover" class="cover">
       <div class="cover-card">
-        <img src="assets/scenes/scene-1.png" alt="Zacarías" />
-        <h1>Las aventuras de Zacarías</h1>
-        <p>Un cuento interactivo para leer, escuchar y descubrir.</p>
-        <button id="startBtn">Comenzar aventura</button>
+        <p class="eyebrow">Cuento interactivo</p>
+        <h1>Las Aventuras<br>de Zacarías</h1>
+        <p class="subtitle">Una historia de valentía, hogar y amor.</p>
+        <button id="startBtn" class="primary-btn">Comenzar</button>
       </div>
     </section>
 
-    <section id="reader" class="reader hidden" aria-live="polite">
-      <div class="storybook" id="storybook">
-        <div class="story-controls" id="controls">
-          <button id="musicBtn" class="round" title="Música">♫</button>
-          <button id="narrationBtn" class="round" title="Narración">🔊</button>
-          <button id="autoBtn" class="round" title="Auto lectura">▶</button>
-          <button id="fullBtn" class="round" title="Pantalla completa">⛶</button>
+    <section id="reader" class="reader hidden">
+      <div class="top-controls">
+        <button id="narrationBtn" class="icon-btn" title="Narración">🔊</button>
+        <button id="musicBtn" class="icon-btn" title="Música">🎵</button>
+      </div>
+
+      <button id="prevBtn" class="nav-btn nav-left" title="Anterior">‹</button>
+      <button id="nextBtn" class="nav-btn nav-right" title="Siguiente">›</button>
+
+      <article class="page-layout">
+        <div class="text-panel">
+          <p id="sceneLabel" class="scene-label"></p>
+          <h2 id="sceneTitle"></h2>
+          <div id="sceneText" class="scene-text"></div>
         </div>
 
-        <section class="text-panel">
-          <div class="counter" id="counter">1 / 9</div>
-          <h2 id="title"></h2>
-          <div id="text" class="text"></div>
-          <button id="mission" class="mission"></button>
-        </section>
-
-        <section class="scene-panel">
-          <div class="stage" id="stage">
-            <img id="sceneImage" class="scene-image" alt="Ilustración del cuento" />
-            <div id="effects" class="effects"></div>
-            <button id="hotspot" class="hotspot">🐾</button>
-            <div id="bubble" class="bubble"></div>
-          </div>
-        </section>
-
-        <button id="prevBtn" class="nav prev" title="Anterior">‹</button>
-        <button id="nextBtn" class="nav next" title="Siguiente">›</button>
-      </div>
+        <div class="image-panel">
+          <img id="sceneImage" alt="Ilustración del cuento de Zacarías" />
+          <div id="weatherLayer" class="weather-layer"></div>
+        </div>
+      </article>
     </section>
   </main>
+
   <script src="app.js"></script>
 </body>
 </html>
