@@ -6,7 +6,7 @@ const scenes = [
     text: [
       "Autora: Claudia Oliva.",
       "Editado por Roberto Bustos.",
-      "Adaptado de una historia real."
+      "Para Samu."
     ],
     duration: 9000
   },
@@ -38,7 +38,7 @@ const scenes = [
     text: [
       "La mirada levantó hacia el tejado de una frutería.",
       "Un gorrión cantor fue su objetivo: perseguirlo y cazarlo quería.",
-      "—¡No me comas! —dijo el ave—. Si me consigues un gusanito, un trozo de jamón a cambio yo te daría."
+      "No me comas, dijo el ave. Si me consigues un gusanito, un trozo de jamón a cambio yo te daría."
     ],
     duration: 23000
   },
@@ -49,7 +49,7 @@ const scenes = [
     text: [
       "Entonces comenzó la búsqueda, y entre árboles se introducía, rogando por algo de suerte.",
       "Fuera de una barbería, un gusano travieso y juguetón bajo una piedrecita vivía.",
-      "—¡No me comas! —gritó el gusano con grandes ojos llorosos."
+      "No me comas, gritó el gusano con grandes ojos llorosos."
     ],
     duration: 23000
   },
@@ -59,14 +59,14 @@ const scenes = [
     image: "assets/pages/page-6.webp",
     text: [
       "Impactado Zacarías, en la cuenta caería: había sido engañado por el gorrión de la frutería.",
-      "—Una idea te puedo dar —el gusano respondía—. Si sigues a aquel ratón que nos mira, más diversión tendrías."
+      "Una idea te puedo dar, el gusano respondía. Si sigues a aquel ratón que nos mira, más diversión tendrías."
     ],
     duration: 21000
   },
   {
     title: "El cansancio de Zacarías",
     mood: "sad",
-    image: "assets/pages/page-7.webp,
+    image: "assets/pages/page-7.webp",
     text: [
       "Decepcionado, Zacarías ya nada le divertía.",
       "El cansancio, el sueño y el miedo el cuerpo le recorrían.",
@@ -87,7 +87,7 @@ const scenes = [
   {
     title: "Un nuevo hogar",
     mood: "happy",
-    image: "assets/page-9.webp",
+    image: "assets/pages/page-9.webp",
     text: [
       "Fue así como lo adoptaron, y de a poco se acostumbraría a su nuevo hogar, con mucho amor y sin falta de comida.",
       "Desde esa aventura, la vida al gato le cambiaría.",
