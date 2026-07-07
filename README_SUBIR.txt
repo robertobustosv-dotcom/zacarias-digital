@@ -1,27 +1,15 @@
-PROTOTIPO ZACARÍAS DIGITAL V4
+Zacarías Digital V5
 
-Cómo probar online:
-1. Descomprime este ZIP.
-2. Entra a https://app.netlify.com/drop
-3. Arrastra la carpeta zacarias_digital completa.
-4. Abre el link en tu celular.
+Cambios principales:
+- Lado derecho muestra solo ilustraciones, sin texto del PDF.
+- Nueva portada tipo cuento interactivo.
+- Botones ocultables: aparecen al tocar/mover y luego desaparecen.
+- Narración preparada para MP3 humanos en assets/audio/narration/page-1.mp3 a page-9.mp3.
+- Si no existen MP3, el sistema respeta la duración programada para no adelantar páginas antes de tiempo.
+- Música de piano generada en navegador: mayor para escenas alegres y menor/suave para escena triste.
 
-Cambios V4:
-- Sin menú inicial: entra directo al cuento.
-- Botones integrados dentro del cuento.
-- Flechas simples: anterior ‹ y siguiente ›.
-- Texto a la izquierda e imagen a la derecha en formato horizontal.
-- En celular se adapta: imagen arriba y texto abajo.
-- Música tipo piano/midi suave con notas mayores.
-- En escenas tristes la música baja y cambia a tono más triste.
-- La lectura automática ahora espera a que termine la narración antes de pasar página.
-
-IMPORTANTE SOBRE LA VOZ:
-La voz del navegador siempre puede sonar algo robótica. Esta versión primero busca audios humanos reales en:
-assets/audio/page-1.mp3
-assets/audio/page-2.mp3
-...
-assets/audio/page-9.mp3
-
-Si esos archivos no existen, usa la mejor voz femenina disponible del celular/navegador.
-Para una voz realmente humana, graba o genera esos 9 MP3 y guárdalos con esos nombres.
+Para usar voz natural:
+1. Genera o graba los audios MP3.
+2. Nómbralos exactamente page-1.mp3, page-2.mp3 ... page-9.mp3.
+3. Súbelos a assets/audio/narration/.
+4. Commit en GitHub; Netlify actualizará automáticamente.
