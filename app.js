@@ -2,7 +2,7 @@ const scenes = [
   {
     title: "Un hogar lleno de vida",
     mood: "warm",
-    image: "assets/pages/page-1.png",
+    image: "assets/pages/page-1.webp",
     text: [
       "Autora: Claudia Oliva.",
       "Editado por Roberto Bustos.",
@@ -13,7 +13,7 @@ const scenes = [
   {
     title: "La puerta se abrió",
     mood: "warm",
-    image: "assets/pages/page-2.png",
+    image: "assets/pages/page-2.webp",
     text: [
       "Zacarías era un gato que en su hermoso hogar vivía, amarillo su pelaje y suave como melodía.",
       "Todo comenzó un frío día, cuando las hojas de los árboles se movían y la puerta de una casa sin querer se abría."
@@ -23,7 +23,7 @@ const scenes = [
   {
     title: "La gran aventura",
     mood: "adventure",
-    image: "assets/pages/page-3.png",
+    image: "assets/pages/page-3.webp",
     text: [
       "El exterior era un misterio que en su mente despertaba alegría.",
       "Sin mirar atrás, a la calle se dirigía. Sus bigotes le temblaban, pero su alma se encendía.",
@@ -34,7 +34,7 @@ const scenes = [
   {
     title: "El gorrión de la frutería",
     mood: "playful",
-    image: "assets/pages/page-4.png",
+    image: "assets/pages/page-4.webp",
     text: [
       "La mirada levantó hacia el tejado de una frutería.",
       "Un gorrión cantor fue su objetivo: perseguirlo y cazarlo quería.",
@@ -45,7 +45,7 @@ const scenes = [
   {
     title: "El gusano travieso",
     mood: "playful",
-    image: "assets/pages/page-5.png",
+    image: "assets/pages/page-5.webp",
     text: [
       "Entonces comenzó la búsqueda, y entre árboles se introducía, rogando por algo de suerte.",
       "Fuera de una barbería, un gusano travieso y juguetón bajo una piedrecita vivía.",
@@ -56,7 +56,7 @@ const scenes = [
   {
     title: "Una nueva pista",
     mood: "mystery",
-    image: "assets/pages/page-6.png",
+    image: "assets/pages/page-6.webp",
     text: [
       "Impactado Zacarías, en la cuenta caería: había sido engañado por el gorrión de la frutería.",
       "—Una idea te puedo dar —el gusano respondía—. Si sigues a aquel ratón que nos mira, más diversión tendrías."
@@ -66,7 +66,7 @@ const scenes = [
   {
     title: "El cansancio de Zacarías",
     mood: "sad",
-    image: "assets/pages/page-7.png",
+    image: "assets/pages/page-7.webp,
     text: [
       "Decepcionado, Zacarías ya nada le divertía.",
       "El cansancio, el sueño y el miedo el cuerpo le recorrían.",
@@ -77,7 +77,7 @@ const scenes = [
   {
     title: "Una familia cuidadosa",
     mood: "hope",
-    image: "assets/pages/page-8.png",
+    image: "assets/pages/page-8.webp",
     text: [
       "Todo cambió un día, cuando en un auto llegaría una pareja cuidadosa que su cabecita acariciaría.",
       "Mostrándole mucho amor, poco a poco se acercarían, y las largas jornadas de frío en calor se convertirían."
@@ -87,7 +87,7 @@ const scenes = [
   {
     title: "Un nuevo hogar",
     mood: "happy",
-    image: "assets/page-9.png",
+    image: "assets/page-9.webp",
     text: [
       "Fue así como lo adoptaron, y de a poco se acostumbraría a su nuevo hogar, con mucho amor y sin falta de comida.",
       "Desde esa aventura, la vida al gato le cambiaría.",
