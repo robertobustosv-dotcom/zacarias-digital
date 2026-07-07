@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6cdbd" />
+  <meta name="description" content="Cuento digital interactivo: Las aventuras de Zacarías" />
+  <title>Las aventuras de Zacarías</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app" class="app">
+    <section id="reader" class="reader active" aria-live="polite">
+      <div class="book-shell">
+        <div class="top-controls" aria-label="Controles del cuento">
+          <button id="musicBtn" class="icon-btn" title="Música">♫</button>
+          <button id="speakBtn" class="icon-btn" title="Narración">🔊</button>
+          <button id="autoBtn" class="icon-btn" title="Lectura automática">▶</button>
+          <button id="stopBtn" class="icon-btn" title="Detener">■</button>
+          <button id="fullBtn" class="icon-btn" title="Pantalla completa">⛶</button>
+        </div>
+
+        <section class="text-page">
+          <div class="page-number" id="pageCounter">1 / 9</div>
+          <h1 id="sceneTitle">Las aventuras de Zacarías</h1>
+          <p id="sceneText" class="scene-text"></p>
+          <div id="mission" class="mission"></div>
+          <div id="progressDots" class="progress"></div>
+        </section>
+
+        <section class="image-page">
+          <img id="pageImage" class="page-image" alt="Página del cuento Las aventuras de Zacarías" />
+          <div id="animLayer" class="anim-layer"></div>
+          <button id="hotspot" class="hotspot" aria-label="Toca para descubrir una sorpresa">🐾</button>
+          <div id="message" class="message"></div>
+        </section>
+
+        <button id="prevBtn" class="nav-btn prev" title="Anterior">‹</button>
+        <button id="nextBtn" class="nav-btn next" title="Siguiente">›</button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
