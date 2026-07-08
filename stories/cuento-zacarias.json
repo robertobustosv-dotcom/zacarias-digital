@@ -12,7 +12,7 @@
         "Zacarías era un gato,",
         "que en su hermoso hogar vivía."
       ],
-      "image": "",
+      "image": "living-dia.png",
       "interaction": "touch_cat",
       "hint": "Toca a Zacarías para saludarlo."
     },
