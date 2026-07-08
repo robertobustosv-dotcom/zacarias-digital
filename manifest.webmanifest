@@ -1,0 +1,8 @@
+{
+  "name": "Las Aventuras de Zacarías",
+  "short_name": "Zacarías",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7dfb5",
+  "theme_color": "#8a4b23"
+}
