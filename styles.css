@@ -419,3 +419,20 @@ button { font-family: inherit; cursor: pointer; }
   filter: drop-shadow(0 14px 14px rgba(74, 40, 22, .25));
   pointer-events: auto;
 }
+/* Zacarías sobre el fondo de la escena */
+
+.image-panel {
+  position: relative;
+}
+
+.character {
+  position: absolute;
+  z-index: 20;
+  width: 28%;
+  left: 52%;
+  bottom: 6%;
+  transform-origin: bottom center;
+  animation: catBreath 3.2s ease-in-out infinite;
+  filter: drop-shadow(0 14px 14px rgba(74, 40, 22, .25));
+  pointer-events: auto;
+}
