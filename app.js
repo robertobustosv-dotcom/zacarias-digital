@@ -65,7 +65,7 @@ function renderScene(index) {
   rewardText.textContent = completedInteractions.has(scene.id) ? "⭐ Descubrimiento logrado" : "";
 
   if (scene.image) {
-    sceneImage.src = `assets/illustrations/${scene.image}`;
+    sceneImage.src = `assets/backgrounds/${scene.image}`;
     sceneImage.classList.remove("hidden");
     placeholderScene.classList.add("hidden");
   } else {
