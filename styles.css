@@ -376,3 +376,35 @@ button { font-family: inherit; cursor: pointer; }
     box-shadow: 0 20px 38px rgba(80, 36, 8, .36);
   }
 }
+/* V0.3 celebración simple */
+
+.reward-text::before {
+  content: "🎉 ";
+}
+
+.hidden-object {
+  z-index: 5;
+}
+
+.hidden-object:hover,
+.hidden-object:active {
+  transform: scale(1.18);
+}
+
+.image-panel.success {
+  animation: successFlash .7s ease-out;
+}
+
+@keyframes successFlash {
+  0% {
+    box-shadow: inset 0 0 0 0 rgba(255, 214, 92, 0);
+  }
+
+  45% {
+    box-shadow: inset 0 0 0 999px rgba(255, 214, 92, .22);
+  }
+
+  100% {
+    box-shadow: inset 0 0 0 0 rgba(255, 214, 92, 0);
+  }
+}
