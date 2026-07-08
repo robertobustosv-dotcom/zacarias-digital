@@ -324,6 +324,52 @@ button { font-family: inherit; cursor: pointer; }
     transform: scale(1);
     box-shadow: 0 16px 28px rgba(80, 36, 8, .25);
   }
+  /* V0.3 lector tipo cuento */
+
+.reader-card {
+  border: 6px solid rgba(255, 250, 236, 0.55);
+}
+
+.text-panel {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.35), transparent 18%),
+    radial-gradient(circle at top left, rgba(255,255,255,.8), transparent 36%),
+    #fff7e5;
+}
+
+.text-panel h2::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-top: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #a95520, transparent);
+}
+
+.image-panel {
+  border: 8px solid rgba(255, 248, 228, .9);
+}
+
+.scene-hint {
+  border: 2px dashed rgba(169, 93, 29, .35);
+}
+
+.reward-text {
+  animation: rewardGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes rewardGlow {
+  0%, 100% {
+    opacity: .75;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
 
   50% {
     transform: scale(1.04);
