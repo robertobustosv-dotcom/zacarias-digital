@@ -16,7 +16,7 @@
         <h1 class="main-title">
           <span>Las aventuras</span>
           <span>de</span>
-          <span id="zacariasWord" class="zacarias-word">Zacarías</span>
+          <span class="zacarias-word">Zacarías</span>
         </h1>
 
         <button id="catButton" class="cat-button" aria-label="Tocar a Zacarías">
@@ -37,14 +37,18 @@
           <p id="sceneCounter" class="scene-counter"></p>
           <h2 id="sceneTitle"></h2>
           <div id="sceneText" class="scene-text"></div>
+          <p id="sceneHint" class="scene-hint"></p>
+          <p id="rewardText" class="reward-text"></p>
         </section>
 
-        <section class="image-panel">
+        <section id="imagePanel" class="image-panel">
           <div id="placeholderScene" class="placeholder-scene">
-            <img src="assets/characters/zacarias/zacarias-cover.png" alt="Zacarías">
-            <p>Sube aquí la ilustración de esta escena</p>
+            <img id="placeholderCat" src="assets/characters/zacarias/zacarias-cover.png" alt="Zacarías">
+            <p>Ilustración de la escena</p>
           </div>
           <img id="sceneImage" class="scene-image hidden" alt="Ilustración de la escena">
+          <button id="hiddenObject" class="hidden-object hidden" aria-label="Objeto escondido">🧶</button>
+          <div id="particleLayer" class="particle-layer"></div>
         </section>
       </div>
 
