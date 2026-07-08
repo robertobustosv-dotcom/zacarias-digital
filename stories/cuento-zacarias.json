@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Las aventuras de Zacarías",
+    "version": "v0.2.0",
+    "dedication": "Para nuestro amado hijo SVBO ❤️"
+  },
+  "scenes": [
+    {
+      "id": "001",
+      "title": "Zacarías era un gato",
+      "text": [
+        "Zacarías era un gato,",
+        "que en su hermoso hogar vivía."
+      ],
+      "image": "",
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías para saludarlo."
+    },
+    {
+      "id": "002",
+      "title": "Suave como melodía",
+      "text": [
+        "Amarillo su pelaje",
+        "y suave como melodía."
+      ],
+      "image": "",
+      "interaction": "find_yarn",
+      "hint": "Busca el ovillo escondido."
+    },
+    {
+      "id": "003",
+      "title": "Una corta historia",
+      "text": [
+        "Esta es una corta historia",
+        "que contarte debería."
+      ],
+      "image": "",
+      "interaction": "touch_star",
+      "hint": "Toca la estrella cuando aparezca."
+    },
+    {
+      "id": "004",
+      "title": "Hasta el final",
+      "text": [
+        "Si me acompañas hasta el final,",
+        "te divertirás con un gatito y su valentía."
+      ],
+      "image": "",
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías otra vez."
+    },
+    {
+      "id": "005",
+      "title": "Un frío día",
+      "text": [
+        "Todo comenzó un frío día,",
+        "cuando las hojas de los árboles se movían."
+      ],
+      "image": "",
+      "interaction": "falling_leaves",
+      "hint": "Toca las hojas."
+    },
+    {
+      "id": "006",
+      "title": "La puerta se abría",
+      "text": [
+        "Entre soplo y soplo del viento,",
+        "la puerta de una casa sin querer se abría."
+      ],
+      "image": "",
+      "interaction": "tap_door",
+      "hint": "Toca la puerta imaginaria."
+    },
+    {
+      "id": "007",
+      "title": "Mucho movimiento",
+      "text": [
+        "Nadie se había dado cuenta,",
+        "ya que mucho movimiento había."
+      ],
+      "image": "",
+      "interaction": "find_yarn",
+      "hint": "Encuentra otro ovillo."
+    },
+    {
+      "id": "008",
+      "title": "La mudanza",
+      "text": [
+        "Los miembros de la casa",
+        "se mudaban a una linda región vecina."
+      ],
+      "image": "",
+      "interaction": "tap_truck",
+      "hint": "Toca el camión para hacerlo sonar."
+    }
+  ]
+}
