@@ -158,6 +158,12 @@ function setupInteraction(scene) {
 function completeInteraction(sceneId) {
   completedInteractions.add(sceneId);
   rewardText.textContent = "⭐ ¡Muy bien!";
+
+  imagePanel.classList.add("success");
+
+  setTimeout(() => {
+    imagePanel.classList.remove("success");
+  }, 800);
 }
 
 function playPurr() {
