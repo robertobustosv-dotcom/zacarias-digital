@@ -5,16 +5,32 @@
     "dedication": "Para nuestro amado hijo SVBO ❤️"
   },
   "scenes": [
+  {
+  "id": "001",
+  "title": "Zacarías era un gato",
+  "text": [
+    "Zacarías era un gato,",
+    "que en su hermoso hogar vivía."
+  ],
+  "background": "living-dia.jpg",
+  "characters": [
     {
-      "id": "001",
-      "title": "Zacarías era un gato",
-      "text": [
-        "Zacarías era un gato,",
-        "que en su hermoso hogar vivía."
-      ],
-      "image": "living-dia.jpg",
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías para saludarlo."
+      "name": "zacarias",
+      "image": "zacarias-cover.png",
+      "x": 52,
+      "y": 72,
+      "width": 28
     }
-  ]
+  ],
+  "objects": [
+    {
+      "name": "ovillo",
+      "image": "ovillo.jpg",
+      "x": 22,
+      "y": 72,
+      "width": 12
+    }
+  ],
+  "interaction": "find_object",
+  "hint": "Busca el ovillo escondido."
 }
