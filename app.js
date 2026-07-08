@@ -1,4 +1,4 @@
-const APP_VERSION = "v0.2.0";
+const APP_VERSION = "v0.5.0";
 
 let story = null;
 let scenes = [];
@@ -27,8 +27,8 @@ const sceneImage = document.getElementById("sceneImage");
 const placeholderScene = document.getElementById("placeholderScene");
 const imagePanel = document.getElementById("imagePanel");
 const hiddenObject = document.getElementById("hiddenObject");
-const zacariasCharacter = document.getElementById("zacariasCharacter");
 const objectImage = document.getElementById("objectImage");
+const zacariasCharacter = document.getElementById("zacariasCharacter");
 const particleLayer = document.getElementById("particleLayer");
 const versionText = document.getElementById("versionText");
 
@@ -38,15 +38,20 @@ async function init() {
     story = await response.json();
     scenes = story.scenes;
     dedication.textContent = story.meta.dedication;
-    versionText.textContent = `Motor Zacarías ${story.meta.version}`;
+    versionText.textContent = `Motor Zacarías ${APP_VERSION}`;
   } catch (error) {
     console.error("No se pudo cargar el cuento:", error);
     scenes = [
       {
         id: "001",
         title: "Zacarías",
-        text: ["No se pudo cargar el cuento.", "Revisa el archivo stories/cuento-zacarias.json"],
-        image: "",
+        text: [
+          "No se pudo cargar el cuento.",
+          "Revisa el archivo stories/cuento-zacarias.json"
+        ],
+        background: "",
+        characters: [],
+        objects: [],
         interaction: "touch_cat",
         hint: "Toca a Zacarías."
       }
@@ -66,14 +71,9 @@ function renderScene(index) {
   sceneHint.textContent = scene.hint || "";
   rewardText.textContent = completedInteractions.has(scene.id) ? "⭐ Descubrimiento logrado" : "";
 
-  if (scene.image) {
-    sceneImage.src = `assets/backgrounds/${scene.image}`;
-    sceneImage.classList.remove("hidden");
-    placeholderScene.classList.add("hidden");
-  } else {
-    sceneImage.classList.add("hidden");
-    placeholderScene.classList.remove("hidden");
-  }
+  renderBackground(scene);
+  renderCharacters(scene);
+  renderObjects(scene);
 
   prevBtn.style.visibility = currentScene === 0 ? "hidden" : "visible";
   nextBtn.style.visibility = currentScene === scenes.length - 1 ? "hidden" : "visible";
@@ -81,43 +81,74 @@ function renderScene(index) {
   setupInteraction(scene);
 }
 
+function renderBackground(scene) {
+  const background = scene.background || scene.image;
+
+  if (background) {
+    sceneImage.src = `assets/backgrounds/${background}`;
+    sceneImage.classList.remove("hidden");
+    placeholderScene.classList.add("hidden");
+  } else {
+    sceneImage.classList.add("hidden");
+    placeholderScene.classList.remove("hidden");
+  }
+}
+
+function renderCharacters(scene) {
+  const zacarias = scene.characters?.find(character => character.name === "zacarias");
+
+  if (!zacarias) {
+    zacariasCharacter.classList.add("hidden");
+    return;
+  }
+
+  zacariasCharacter.src = `assets/characters/zacarias/${zacarias.image}`;
+  zacariasCharacter.style.left = `${zacarias.x}%`;
+  zacariasCharacter.style.top = `${zacarias.y}%`;
+  zacariasCharacter.style.width = `${zacarias.width}%`;
+  zacariasCharacter.classList.remove("hidden");
+}
+
+function renderObjects(scene) {
+  const object = scene.objects?.[0];
+
+  if (!object) {
+    hiddenObject.classList.add("hidden");
+    return;
+  }
+
+  objectImage.src = `assets/objects/${object.image}`;
+  hiddenObject.style.left = `${object.x}%`;
+  hiddenObject.style.top = `${object.y}%`;
+  hiddenObject.style.width = `${object.width}%`;
+  hiddenObject.style.height = `${object.width}%`;
+  hiddenObject.classList.remove("hidden");
+}
+
 function setupInteraction(scene) {
   hiddenObject.classList.add("hidden");
   hiddenObject.classList.remove("found");
   particleLayer.innerHTML = "";
   placeholderScene.classList.remove("cat-rub");
+  imagePanel.classList.remove("success");
 
   imagePanel.onclick = null;
   hiddenObject.onclick = null;
+
+  if (scene.objects?.length) {
+    renderObjects(scene);
+  }
 
   if (completedInteractions.has(scene.id)) return;
 
   if (scene.interaction === "touch_cat") {
     imagePanel.onclick = () => {
-      placeholderScene.classList.add("cat-rub");
       playPurr();
       completeInteraction(scene.id);
-      setTimeout(() => placeholderScene.classList.remove("cat-rub"), 1800);
     };
   }
 
-  if (scene.interaction === "find_yarn") {
-    hiddenObject.textContent = "🧶";
-    hiddenObject.style.left = "18%";
-    hiddenObject.style.top = "68%";
-    hiddenObject.classList.remove("hidden");
-    hiddenObject.onclick = (event) => {
-      event.stopPropagation();
-      hiddenObject.classList.add("found");
-      completeInteraction(scene.id);
-    };
-  }
-
-  if (scene.interaction === "touch_star") {
-    hiddenObject.textContent = "⭐";
-    hiddenObject.style.left = "74%";
-    hiddenObject.style.top = "24%";
-    hiddenObject.classList.remove("hidden");
+  if (scene.interaction === "find_object" || scene.interaction === "find_yarn") {
     hiddenObject.onclick = (event) => {
       event.stopPropagation();
       hiddenObject.classList.add("found");
@@ -132,23 +163,7 @@ function setupInteraction(scene) {
     };
   }
 
-  if (scene.interaction === "tap_door") {
-    hiddenObject.textContent = "🚪";
-    hiddenObject.style.left = "70%";
-    hiddenObject.style.top = "50%";
-    hiddenObject.classList.remove("hidden");
-    hiddenObject.onclick = (event) => {
-      event.stopPropagation();
-      hiddenObject.classList.add("found");
-      completeInteraction(scene.id);
-    };
-  }
-
   if (scene.interaction === "tap_truck") {
-    hiddenObject.textContent = "🚚";
-    hiddenObject.style.left = "60%";
-    hiddenObject.style.top = "56%";
-    hiddenObject.classList.remove("hidden");
     hiddenObject.onclick = (event) => {
       event.stopPropagation();
       beep();
@@ -225,6 +240,7 @@ function beep() {
 
 function createLeaves() {
   const leaves = ["🍂", "🍁", "🍃"];
+
   for (let i = 0; i < 10; i++) {
     const leaf = document.createElement("span");
     leaf.className = "particle";
