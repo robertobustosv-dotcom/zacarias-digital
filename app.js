@@ -27,6 +27,8 @@ const sceneImage = document.getElementById("sceneImage");
 const placeholderScene = document.getElementById("placeholderScene");
 const imagePanel = document.getElementById("imagePanel");
 const hiddenObject = document.getElementById("hiddenObject");
+const zacariasCharacter = document.getElementById("zacariasCharacter");
+const objectImage = document.getElementById("objectImage");
 const particleLayer = document.getElementById("particleLayer");
 const versionText = document.getElementById("versionText");
 
