@@ -6,16 +6,16 @@
   },
   "scenes": [
     {
-      "id": "001",
-      "title": "Zacarías era un gato",
-      "text": [
-        "Zacarías era un gato,",
-        "que en su hermoso hogar vivía."
-      ],
-      "image": "living-dia.png",
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías para saludarlo."
-    },
+  "id": "001",
+  "title": "Zacarías era un gato",
+  "text": [
+    "Zacarías era un gato,",
+    "que en su hermoso hogar vivía."
+  ],
+  "image": "living-dia.jpg",
+  "interaction": "touch_cat",
+  "hint": "Toca a Zacarías para saludarlo."
+}
     {
       "id": "002",
       "title": "Suave como melodía",
