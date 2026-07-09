@@ -490,3 +490,39 @@ button { font-family: inherit; cursor: pointer; }
 .reader-screen {
   overflow: hidden;
 }
+/* Portada interactiva Zacarías */
+
+.cover-content {
+  overflow: hidden;
+}
+
+.cat-button img {
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.cat-button:hover img,
+.cat-button:active img {
+  transform: scale(1.06) rotate(3deg);
+  filter: drop-shadow(0 22px 22px rgba(74, 40, 22, .32));
+}
+
+.cat-button.rub img {
+  animation: coverRub 1.9s ease-in-out;
+}
+
+.zacarias-word {
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes coverRub {
+  0% { transform: translateX(0) rotate(0deg) scale(1); }
+  25% { transform: translateX(-22px) rotate(-5deg) scale(1.04); }
+  55% { transform: translateX(22px) rotate(5deg) scale(1.05); }
+  80% { transform: translateX(-8px) rotate(-2deg) scale(1.02); }
+  100% { transform: translateX(0) rotate(0deg) scale(1); }
+}
+
+@keyframes titleGlow {
+  0%, 100% { text-shadow: 0 4px 0 rgba(255,255,255,.55); }
+  50% { text-shadow: 0 4px 0 rgba(255,255,255,.55), 0 0 18px rgba(255, 210, 99, .9); }
+}
