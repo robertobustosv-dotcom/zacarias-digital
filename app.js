@@ -276,5 +276,21 @@ musicBtn.addEventListener("click", () => {
 narrationBtn.addEventListener("click", () => {
   narrationBtn.textContent = narrationBtn.textContent === "🔊" ? "🔇" : "🔊";
 });
+setInterval(()=>{
 
+    if(reader.classList.contains("hidden")){
+
+        coverFrame++;
+
+        if(coverFrame>=coverFrames.length){
+
+            coverFrame=0;
+
+        }
+
+        coverCat.src=coverFrames[coverFrame];
+
+    }
+
+},700);
 init();
