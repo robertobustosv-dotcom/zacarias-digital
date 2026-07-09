@@ -47,7 +47,7 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-17.jpg",
+          "image": "personaje-17.png",
           "x": 56,
           "y": 72,
           "width": 28
@@ -69,7 +69,7 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-04.jpg",
+          "image": "personaje-04.png",
           "x": 50,
           "y": 72,
           "width": 28
@@ -91,7 +91,7 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-02.jpg",
+          "image": "personaje-02.png",
           "x": 54,
           "y": 72,
           "width": 28
@@ -113,7 +113,7 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-05.jpg",
+          "image": "personaje-05.png",
           "x": 48,
           "y": 72,
           "width": 27
@@ -135,7 +135,7 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-20.jpg",
+          "image": "personaje-20.png",
           "x": 60,
           "y": 72,
           "width": 26
@@ -165,7 +165,7 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-28.jpg",
+          "image": "personaje-28.png",
           "x": 54,
           "y": 72,
           "width": 27
@@ -187,7 +187,7 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-06.jpg",
+          "image": "personaje-06.png",
           "x": 47,
           "y": 72,
           "width": 27
@@ -217,7 +217,7 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-23.jpg",
+          "image": "personaje-23.png",
           "x": 56,
           "y": 72,
           "width": 27
