@@ -463,3 +463,30 @@ button { font-family: inherit; cursor: pointer; }
 
     pointer-events:none;
 }
+/* FIX navegación visible */
+
+.nav-btn {
+  z-index: 9999;
+  display: grid !important;
+  place-items: center;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.prev {
+  left: 18px !important;
+  bottom: 18px !important;
+}
+
+.next {
+  right: 18px !important;
+  bottom: 18px !important;
+}
+
+.top-buttons {
+  z-index: 9999;
+}
+
+.reader-screen {
+  overflow: hidden;
+}
