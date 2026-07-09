@@ -33,6 +33,18 @@ const particleLayer = document.getElementById("particleLayer");
 const versionText = document.getElementById("versionText");
 const purrAudio = new Audio("assets/sfx/purr.mp3");
 purrAudio.volume = 0.6;
+const coverFrames = [
+"assets/ui/portada-zacarias/pose-01.png",
+"assets/ui/portada-zacarias/pose-02.png",
+"assets/ui/portada-zacarias/pose-03.png",
+"assets/ui/portada-zacarias/pose-04.png",
+"assets/ui/portada-zacarias/pose-05.png",
+"assets/ui/portada-zacarias/pose-06.png",
+"assets/ui/portada-zacarias/pose-07.png",
+"assets/ui/portada-zacarias/pose-08.png"
+];
+
+let coverFrame=0;
 
 async function init() {
   try {
