@@ -31,6 +31,8 @@ const objectImage = document.getElementById("objectImage");
 const zacariasCharacter = document.getElementById("zacariasCharacter");
 const particleLayer = document.getElementById("particleLayer");
 const versionText = document.getElementById("versionText");
+const purrAudio = new Audio("assets/sfx/purr.mp3");
+purrAudio.volume = 0.6;
 
 async function init() {
   try {
@@ -189,26 +191,14 @@ function playPurr() {
 
   catButton.classList.add("rub");
   purrText.textContent = "Prrrrrrrr...";
+try{
 
-  try {
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const oscillator = audioContext.createOscillator();
-    const gain = audioContext.createGain();
+    purrAudio.currentTime = 0;
 
-    oscillator.type = "sine";
-    oscillator.frequency.setValueAtTime(70, audioContext.currentTime);
-    oscillator.frequency.linearRampToValueAtTime(95, audioContext.currentTime + 0.5);
+    purrAudio.play();
 
-    gain.gain.setValueAtTime(0.001, audioContext.currentTime);
-    gain.gain.linearRampToValueAtTime(0.08, audioContext.currentTime + 0.1);
-    gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 1.5);
-
-    oscillator.connect(gain);
-    gain.connect(audioContext.destination);
-
-    oscillator.start();
-    oscillator.stop(audioContext.currentTime + 1.6);
-  } catch (error) {}
+}catch(e){}
+ 
 
   setTimeout(() => {
     catButton.classList.remove("rub");
