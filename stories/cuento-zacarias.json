@@ -1,38 +1,1518 @@
 {
   "meta": {
     "title": "Las aventuras de Zacarías",
-    "version": "v0.2.0",
+    "version": "v0.5.0",
     "dedication": "Para nuestro amado hijo SVBO ❤️"
   },
   "scenes": [
-  {
-  "id": "001",
-  "title": "Zacarías era un gato",
-  "text": [
-    "Zacarías era un gato,",
-    "que en su hermoso hogar vivía."
-  ],
-  "background": "living-dia.jpg",
-  "characters": [
     {
-      "name": "zacarias",
-      "image": "zacarias-cover.png",
-      "x": 52,
-      "y": 72,
-      "width": 28
-    }
-  ],
-  "objects": [
+      "id": "001",
+      "title": "Zacarías era un gato",
+      "text": [
+        "Zacarías era un gato,",
+        "que en su hermoso hogar vivía."
+      ],
+      "background": "background-01.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 72,
+          "width": 28
+        }
+      ],
+      "objects": [
+        {
+          "name": "ovillo",
+          "image": "objeto-01-ovillo.jpg",
+          "x": 22,
+          "y": 72,
+          "width": 12
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Busca el ovillo escondido."
+    },
     {
-      "name": "ovillo",
-      "image": "ovillo.jpg",
-      "x": 22,
-      "y": 72,
-      "width": 12
-    }
-  ],
-  "interaction": "find_object",
-  "hint": "Busca el ovillo escondido."
+      "id": "002",
+      "title": "Suave como melodía",
+      "text": [
+        "Amarillo su pelaje",
+        "y suave como melodía."
+      ],
+      "background": "background-01.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 56,
+          "y": 72,
+          "width": 28
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías para saludarlo."
+    },
+    {
+      "id": "003",
+      "title": "Una corta historia",
+      "text": [
+        "Esta es una corta historia",
+        "que contarte debería."
+      ],
+      "background": "background-01.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 72,
+          "width": 28
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Haz cariño a Zacarías."
+    },
+    {
+      "id": "004",
+      "title": "Hasta el final",
+      "text": [
+        "Si me acompañas hasta el final,",
+        "te divertirás con un gatito y su valentía."
+      ],
+      "background": "background-01.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 54,
+          "y": 72,
+          "width": 28
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías para que ronronee."
+    },
+    {
+      "id": "005",
+      "title": "Un frío día",
+      "text": [
+        "Todo comenzó un frío día,",
+        "cuando las hojas de los árboles se movían."
+      ],
+      "background": "background-02.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 48,
+          "y": 72,
+          "width": 27
+        }
+      ],
+      "objects": [],
+      "interaction": "falling_leaves",
+      "hint": "Toca la escena para mover las hojas."
+    },
+    {
+      "id": "006",
+      "title": "La puerta se abría",
+      "text": [
+        "Entre soplo y soplo del viento,",
+        "la puerta de una casa sin querer se abría."
+      ],
+      "background": "background-02.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 60,
+          "y": 72,
+          "width": 26
+        }
+      ],
+      "objects": [
+        {
+          "name": "puerta",
+          "image": "objeto-02-puerta.png",
+          "x": 76,
+          "y": 48,
+          "width": 12
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca la puerta."
+    },
+    {
+      "id": "007",
+      "title": "La mudanza",
+      "text": [
+        "Nadie se había dado cuenta,",
+        "ya que mucho movimiento había."
+      ],
+      "background": "background-02.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 54,
+          "y": 72,
+          "width": 27
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías."
+    },
+    {
+      "id": "008",
+      "title": "Una región vecina",
+      "text": [
+        "Los miembros de la casa",
+        "se mudaban a una linda región vecina."
+      ],
+      "background": "background-02.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 47,
+          "y": 72,
+          "width": 27
+        }
+      ],
+      "objects": [
+        {
+          "name": "camion",
+          "image": "objeto-03-camion.png",
+          "x": 70,
+          "y": 60,
+          "width": 18
+        }
+      ],
+      "interaction": "tap_truck",
+      "hint": "Toca el camión."
+    },
+    {
+      "id": "009",
+      "title": "Cajas y maletas",
+      "text": [
+        "Mucho desorden existía;",
+        "las cajas, los bolsos y maletas distraían."
+      ],
+      "background": "background-02.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 56,
+          "y": 72,
+          "width": 27
+        }
+      ],
+      "objects": [
+        {
+          "name": "ovillo",
+          "image": "objeto-01-ovillo.jpg",
+          "x": 24,
+          "y": 76,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Busca el ovillo entre las cajas."
+    },
+    {
+      "id": "010",
+      "title": "La huida de Zacarías",
+      "text": [
+        "De la sutil huida",
+        "del gatito Zacarías."
+      ],
+      "background": "background-02.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 64,
+          "y": 72,
+          "width": 25
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías antes de que salga."
+    },
+    {
+      "id": "011",
+      "title": "Hacia la libertad",
+      "text": [
+        "Silencioso se escabullía",
+        "hacia la libertad que se le ofrecía."
+      ],
+      "background": "background-03.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 48,
+          "y": 72,
+          "width": 26
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías para animarlo."
+    },
+    {
+      "id": "012",
+      "title": "El exterior",
+      "text": [
+        "El exterior era un misterio,",
+        "que en su mente despertaba alegría."
+      ],
+      "background": "background-03.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 72,
+          "width": 26
+        }
+      ],
+      "objects": [
+        {
+          "name": "mariposa",
+          "image": "objeto-04-mariposa.png",
+          "x": 72,
+          "y": 28,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra la mariposa."
+    },
+    {
+      "id": "013",
+      "title": "Sin mirar atrás",
+      "text": [
+        "Sin mirar atrás, a la calle se dirigía;",
+        "sus bigotes le temblaban."
+      ],
+      "background": "background-03.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 60,
+          "y": 72,
+          "width": 25
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías."
+    },
+    {
+      "id": "014",
+      "title": "Una gran aventura",
+      "text": [
+        "No sabía a dónde iría,",
+        "pero su corazón insistía: una gran aventura sería."
+      ],
+      "background": "background-03.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 54,
+          "y": 72,
+          "width": 26
+        }
+      ],
+      "objects": [
+        {
+          "name": "estrella",
+          "image": "objeto-05-estrella.png",
+          "x": 78,
+          "y": 24,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca la estrella de la aventura."
+    },
+    {
+      "id": "015",
+      "title": "El camión gigante",
+      "text": [
+        "Un camión gigante fue lo último",
+        "que de su hogar vería."
+      ],
+      "background": "background-04.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 40,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "camion",
+          "image": "objeto-03-camion.png",
+          "x": 64,
+          "y": 56,
+          "width": 20
+        }
+      ],
+      "interaction": "tap_truck",
+      "hint": "Toca el camión."
+    },
+    {
+      "id": "016",
+      "title": "El gorrión",
+      "text": [
+        "La mirada levantó hacia el tejado",
+        "de una frutería."
+      ],
+      "background": "background-05.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 45,
+          "y": 74,
+          "width": 25
+        }
+      ],
+      "objects": [
+        {
+          "name": "gorrion",
+          "image": "objeto-06-gorrion.png",
+          "x": 68,
+          "y": 24,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra al gorrión."
+    },
+    {
+      "id": "017",
+      "title": "Perseguirlo quería",
+      "text": [
+        "Un gorrión cantor fue su objetivo:",
+        "perseguirlo y cazarlo quería."
+      ],
+      "background": "background-05.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 54,
+          "y": 74,
+          "width": 25
+        }
+      ],
+      "objects": [
+        {
+          "name": "gorrion",
+          "image": "objeto-06-gorrion.png",
+          "x": 72,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca al gorrión."
+    },
+    {
+      "id": "018",
+      "title": "Calles y calles",
+      "text": [
+        "Calles y calles recorrió,",
+        "hasta que perdido se vería."
+      ],
+      "background": "background-06.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Acompaña a Zacarías."
+    },
+    {
+      "id": "019",
+      "title": "Hambre y frío",
+      "text": [
+        "El hambre apretaba fuerte",
+        "y el frío lo perseguía."
+      ],
+      "background": "background-06.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Hazle cariño a Zacarías."
+    },
+    {
+      "id": "020",
+      "title": "No me comas",
+      "text": [
+        "No me comas, dijo el ave,",
+        "que mucho susto ya tenía."
+      ],
+      "background": "background-05.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 48,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "gorrion",
+          "image": "objeto-06-gorrion.png",
+          "x": 72,
+          "y": 32,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca al gorrión asustado."
+    },
+    {
+      "id": "021",
+      "title": "El trato",
+      "text": [
+        "Si me consigues un gusanito,",
+        "un trozo de jamón a cambio yo te daría."
+      ],
+      "background": "background-05.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "gorrion",
+          "image": "objeto-06-gorrion.png",
+          "x": 70,
+          "y": 32,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra al gorrión."
+    },
+    {
+      "id": "022",
+      "title": "La búsqueda",
+      "text": [
+        "Entonces comenzó la búsqueda,",
+        "y entre árboles se introducía."
+      ],
+      "background": "background-07.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "falling_leaves",
+      "hint": "Toca las hojas del bosque."
+    },
+    {
+      "id": "023",
+      "title": "Buen cazador",
+      "text": [
+        "Él pensaba que era buen cazador,",
+        "y que muchas capacidades tenía."
+      ],
+      "background": "background-07.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 54,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías."
+    },
+    {
+      "id": "024",
+      "title": "Atrapar gusanos",
+      "text": [
+        "Pero cuando de atrapar gusanos hablamos,",
+        "habilidades no poseía."
+      ],
+      "background": "background-07.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 55,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "gusano",
+          "image": "objeto-07-gusano.png",
+          "x": 26,
+          "y": 78,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra al gusano."
+    },
+    {
+      "id": "025",
+      "title": "Cansado y hambriento",
+      "text": [
+        "Cansado y hambriento,",
+        "por plazas y calles corría."
+      ],
+      "background": "background-08.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Acompaña a Zacarías."
+    },
+    {
+      "id": "026",
+      "title": "Un refugio",
+      "text": [
+        "Siempre buscando refugio,",
+        "un lugar donde dormiría."
+      ],
+      "background": "background-08.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 48,
+          "y": 74,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías."
+    },
+    {
+      "id": "027",
+      "title": "El gusano travieso",
+      "text": [
+        "Fuera de una barbería,",
+        "un gusano travieso bajo una piedrecita vivía."
+      ],
+      "background": "background-09.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 54,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "gusano",
+          "image": "objeto-07-gusano.png",
+          "x": 28,
+          "y": 78,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Busca al gusano."
+    },
+    {
+      "id": "028",
+      "title": "No me comas",
+      "text": [
+        "No me comas, gritó el gusano,",
+        "con grandes ojos llorosos le decía."
+      ],
+      "background": "background-09.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 58,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "gusano",
+          "image": "objeto-07-gusano.png",
+          "x": 30,
+          "y": 78,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca al gusano."
+    },
+    {
+      "id": "029",
+      "title": "El engaño",
+      "text": [
+        "Impactado Zacarías,",
+        "en la cuenta caería."
+      ],
+      "background": "background-09.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías sorprendido."
+    },
+    {
+      "id": "030",
+      "title": "El gorrión lo engañó",
+      "text": [
+        "Que engañado había sido",
+        "por el gorrión de la frutería."
+      ],
+      "background": "background-09.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "gorrion",
+          "image": "objeto-06-gorrion.png",
+          "x": 70,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Busca al gorrión."
+    },
+    {
+      "id": "031",
+      "title": "El ratón",
+      "text": [
+        "Si sigues a aquel ratón que nos mira,",
+        "más diversión tú tendrías."
+      ],
+      "background": "background-10.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "raton",
+          "image": "objeto-08-raton.png",
+          "x": 72,
+          "y": 76,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra al ratón."
+    },
+    {
+      "id": "032",
+      "title": "La panadería",
+      "text": [
+        "Entusiasmado Zacarías con audacia se movía,",
+        "persiguiendo aquel ratón hasta la calle de la panadería."
+      ],
+      "background": "background-10.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 55,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "raton",
+          "image": "objeto-08-raton.png",
+          "x": 24,
+          "y": 76,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Busca al ratón otra vez."
+    },
+    {
+      "id": "033",
+      "title": "La cacería",
+      "text": [
+        "La cacería no fue fácil;",
+        "el ratón de él se reía."
+      ],
+      "background": "background-10.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 54,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "raton",
+          "image": "objeto-08-raton.png",
+          "x": 70,
+          "y": 76,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra al ratón escondido."
+    },
+    {
+      "id": "034",
+      "title": "Muy rápido escaparía",
+      "text": [
+        "Escondido entre los desagües,",
+        "muy rápido escaparía."
+      ],
+      "background": "background-10.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 48,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "raton",
+          "image": "objeto-08-raton.png",
+          "x": 20,
+          "y": 82,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Busca al ratón en el suelo."
+    },
+    {
+      "id": "035",
+      "title": "Nada le divertía",
+      "text": [
+        "Decepcionado, Zacarías",
+        "ya nada le divertía."
+      ],
+      "background": "background-11.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 75,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Acaricia a Zacarías."
+    },
+    {
+      "id": "036",
+      "title": "Miedo y cansancio",
+      "text": [
+        "El cansancio, el sueño y miedo",
+        "el cuerpo le recorrían."
+      ],
+      "background": "background-11.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 75,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca suavemente a Zacarías."
+    },
+    {
+      "id": "037",
+      "title": "Arrepentido",
+      "text": [
+        "Muy arrepentido estoy",
+        "de escaparme ese día."
+      ],
+      "background": "background-11.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 75,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Hazle cariño a Zacarías."
+    },
+    {
+      "id": "038",
+      "title": "Peligros",
+      "text": [
+        "No sabía de los peligros",
+        "y las consecuencias que me traería."
+      ],
+      "background": "background-11.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 75,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Acompaña a Zacarías."
+    },
+    {
+      "id": "039",
+      "title": "Miau miau",
+      "text": [
+        "Ya sucio y más flaquito,",
+        "a las personas acudía."
+      ],
+      "background": "background-11.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 75,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías para escucharlo."
+    },
+    {
+      "id": "040",
+      "title": "Nadie le entendía",
+      "text": [
+        "Un miau miau de vez en cuando,",
+        "pero nadie le entendía."
+      ],
+      "background": "background-11.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 75,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías."
+    },
+    {
+      "id": "041",
+      "title": "Todo cambió",
+      "text": [
+        "Todo cambió un día,",
+        "cuando en un auto llegaría una pareja cuidadosa."
+      ],
+      "background": "background-12.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 48,
+          "y": 74,
+          "width": 23
+        }
+      ],
+      "objects": [
+        {
+          "name": "corazon",
+          "image": "objeto-09-corazon.png",
+          "x": 72,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el corazón."
+    },
+    {
+      "id": "042",
+      "title": "La familia",
+      "text": [
+        "Con mucho cuidado,",
+        "su cabecita acariciarían."
+      ],
+      "background": "background-12.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 48,
+          "y": 74,
+          "width": 23
+        }
+      ],
+      "objects": [
+        {
+          "name": "corazon",
+          "image": "objeto-09-corazon.png",
+          "x": 72,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca el corazón."
+    },
+    {
+      "id": "043",
+      "title": "No nos muerdas",
+      "text": [
+        "No nos muerdas, Zacarías.",
+        "Bien te has de portar."
+      ],
+      "background": "background-12.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 74,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Haz cariño a Zacarías."
+    },
+    {
+      "id": "044",
+      "title": "Te queremos ayudar",
+      "text": [
+        "Aquí eres un invitado,",
+        "y te queremos ayudar."
+      ],
+      "background": "background-12.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 74,
+          "width": 23
+        }
+      ],
+      "objects": [
+        {
+          "name": "corazon",
+          "image": "objeto-09-corazon.png",
+          "x": 72,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Busca el corazón."
+    },
+    {
+      "id": "045",
+      "title": "Nadie te hará daño",
+      "text": [
+        "Aquí nadie te hará daño,",
+        "no te debes defender."
+      ],
+      "background": "background-12.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 74,
+          "width": 23
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías con cariño."
+    },
+    {
+      "id": "046",
+      "title": "Frío en calor",
+      "text": [
+        "Mostrándole mucho amor,",
+        "las largas jornadas de frío en calor se convertirían."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "corazon",
+          "image": "objeto-09-corazon.png",
+          "x": 70,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el corazón de la escena."
+    },
+    {
+      "id": "047",
+      "title": "En las noches",
+      "text": [
+        "Aunque los dueños no sabían,",
+        "él en las noches se escabullía."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías."
+    },
+    {
+      "id": "048",
+      "title": "Calentito en el living",
+      "text": [
+        "Entraba por el patio de la casa,",
+        "y calentito en el living dormía."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Haz dormir a Zacarías."
+    },
+    {
+      "id": "049",
+      "title": "Lo pillaron",
+      "text": [
+        "Una noche lo pillaron,",
+        "y mucho asombro causaría."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "estrella",
+          "image": "objeto-05-estrella.png",
+          "x": 74,
+          "y": 25,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca la estrella de sorpresa."
+    },
+    {
+      "id": "050",
+      "title": "Lo adoptaron",
+      "text": [
+        "Fue así como lo adoptaron,",
+        "y de a poco se acostumbraría a su nuevo hogar."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "corazon",
+          "image": "objeto-09-corazon.png",
+          "x": 70,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el corazón."
+    },
+    {
+      "id": "051",
+      "title": "Mucho amor",
+      "text": [
+        "Con mucho amor",
+        "y sin falta de comida."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "corazon",
+          "image": "objeto-09-corazon.png",
+          "x": 70,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca el corazón."
+    },
+    {
+      "id": "052",
+      "title": "La vida cambió",
+      "text": [
+        "Desde esa aventura,",
+        "la vida al gato le cambiaría."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías feliz."
+    },
+    {
+      "id": "053",
+      "title": "La puerta era límite",
+      "text": [
+        "La puerta de la casa era límite",
+        "de lo que se le permitía."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "puerta",
+          "image": "objeto-02-puerta.png",
+          "x": 76,
+          "y": 48,
+          "width": 12
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca la puerta."
+    },
+    {
+      "id": "054",
+      "title": "Mejor no salir",
+      "text": [
+        "Era mejor no salir",
+        "y hacer caso a sus humanos."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [],
+      "interaction": "touch_cat",
+      "hint": "Toca a Zacarías."
+    },
+    {
+      "id": "055",
+      "title": "Seguridad y compañía",
+      "text": [
+        "Todo era por su seguridad",
+        "y por la mejor compañía."
+      ],
+      "background": "background-13.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 52,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "estrella",
+          "image": "objeto-05-estrella.png",
+          "x": 74,
+          "y": 25,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca la estrella final."
+    },
+    {
+      "id": "056",
+      "title": "Dos gatitas más",
+      "text": [
+        "Ya que junto a dos gatitas más,",
+        "su vida compartiría."
+      ],
+      "background": "background-14.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 48,
+          "y": 74,
+          "width": 23
+        },
+        {
+          "name": "josefa",
+          "folder": "josefa",
+          "image": "personaje-01.png",
+          "x": 62,
+          "y": 74,
+          "width": 21
+        },
+        {
+          "name": "hamburguesita",
+          "folder": "hamburguesita",
+          "image": "personaje-01.png",
+          "x": 76,
+          "y": 74,
+          "width": 21
+        }
+      ],
+      "objects": [
+        {
+          "name": "corazon",
+          "image": "objeto-09-corazon.png",
+          "x": 72,
+          "y": 30,
+          "width": 10
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el corazón de la familia."
+    },
+    {
+      "id": "057",
+      "title": "Fin",
+      "text": [
+        "Fin."
+      ],
+      "background": "background-14.jpg",
+      "characters": [
+        {
+          "name": "zacarias",
+          "folder": "zacarias",
+          "image": "personaje-01.png",
+          "x": 50,
+          "y": 74,
+          "width": 24
+        }
+      ],
+      "objects": [
+        {
+          "name": "estrella",
+          "image": "objeto-05-estrella.png",
+          "x": 72,
+          "y": 28,
+          "width": 12
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Toca la estrella para terminar."
     }
   ]
 }
