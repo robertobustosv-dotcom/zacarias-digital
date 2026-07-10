@@ -1,9 +1,14 @@
-# Motor Zacarías v1.0.0
+# Motor Zacarías v1.1.0 completo
 
-- 29 páginas, con hasta 4 versos por página.
-- Fuente grande y fácil de leer.
-- Botón ⌂ para volver a la portada.
-- Objetos ocultos aleatorios dentro del fondo.
-- Si falta un objeto, se muestra su nombre exacto para corregirlo.
-- Soporte para narración `escena-001.mp3` a `escena-029.mp3`.
-- Música esperada: `music-warm.mp3` y `music-sad.mp3`.
+Incluye los fondos, 32 poses de Zacarías, 29 objetos y 5 pistas musicales aportadas.
+
+Mejoras:
+- fondos completos sin recorte mediante object-fit: contain;
+- fondo desenfocado detrás para eliminar franjas vacías;
+- background-05.png seguido únicamente por background-05-2.png;
+- una pose distinta por página;
+- música según la etapa del cuento con fundido;
+- objetos aleatorios dentro del escenario y evitando a Zacarías;
+- progreso guardado;
+- botón de portada, música, narración y pantalla completa;
+- soporte para narraciones escena-001.mp3 a escena-029.mp3 sin mostrar errores si faltan.

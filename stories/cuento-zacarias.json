@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Las aventuras de Zacarías",
-    "version": "v1.0.0",
+    "version": "v1.1.0",
     "dedication": "Para nuestro amado hijo SVBO ❤️"
   },
   "scenes": [
@@ -18,24 +18,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-01.png",
+          "image": "personaje-15-original.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "ovillo",
+          "name": "objeto-01-ovillo",
           "image": "objeto-01-ovillo.png",
-          "width": 13,
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-001.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-home.mp3",
+      "narration": "escena-001.mp3"
     },
     {
       "id": "002",
@@ -45,22 +45,29 @@
         "Si me acompañas hasta el final,",
         "te divertirás con un gatito y su valentía."
       ],
-      "": "background-01.png",
+      "background": "background-01.png",
       "characters": [
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-02.png",
+          "image": "personaje-03-mirada-tierna.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías.",
-      "narration": "escena-002.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "objects": [
+        {
+          "name": "objeto-02-corazon",
+          "image": "objeto-02-corazon.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-home.mp3",
+      "narration": "escena-002.mp3"
     },
     {
       "id": "003",
@@ -75,24 +82,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-03.png",
+          "image": "personaje-02-estirando.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "puerta",
-          "image": "objeto-02-puerta.png",
-          "width": 13,
+          "name": "objeto-03-caja",
+          "image": "objeto-03-caja.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-003.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-moving.mp3",
+      "narration": "escena-003.mp3"
     },
     {
       "id": "004",
@@ -107,24 +114,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-04.png",
+          "image": "personaje-04-dudoso.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "camion",
-          "image": "objeto-03-camion.png",
-          "width": 13,
+          "name": "objeto-04-camion",
+          "image": "objeto-04-camion.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-004.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-moving.mp3",
+      "narration": "escena-004.mp3"
     },
     {
       "id": "005",
@@ -139,17 +146,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-05.png",
+          "image": "personaje-06-camiando-derecha.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías.",
-      "narration": "escena-005.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "objects": [
+        {
+          "name": "objeto-05-llave",
+          "image": "objeto-05-llave.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-moving.mp3",
+      "narration": "escena-005.mp3"
     },
     {
       "id": "006",
@@ -164,24 +178,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-06.png",
+          "image": "personaje-16-mirando-diagonal.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "mariposa",
-          "image": "objeto-04-mariposa.png",
-          "width": 13,
+          "name": "objeto-06-mariposa",
+          "image": "objeto-06-mariposa.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-006.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-006.mp3"
     },
     {
       "id": "007",
@@ -196,24 +210,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-07.png",
+          "image": "personaje-29-nervioso.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "camion",
-          "image": "objeto-03-camion.png",
-          "width": 13,
+          "name": "objeto-07-gorrion",
+          "image": "objeto-07-gorrion.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-007.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-007.mp3"
     },
     {
       "id": "008",
@@ -223,29 +237,29 @@
         "La mirada levantó hacia el tejado",
         "de una frutería."
       ],
-      "background": "background-04.png",
+      "background": "background-05.png",
       "characters": [
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-08.png",
+          "image": "personaje-08-mirando-mariposa.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "gorrion",
-          "image": "objeto-06-gorrion.png",
-          "width": 13,
+          "name": "objeto-08-hoja",
+          "image": "objeto-08-hoja.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-008.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-008.mp3"
     },
     {
       "id": "009",
@@ -255,29 +269,29 @@
         "Calles y calles recorrió,",
         "hasta que perdido se vería."
       ],
-      "background": "background-05.png",
+      "background": "background-05-2.png",
       "characters": [
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-09.png",
+          "image": "personaje-09-cazando.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "gorrion",
-          "image": "objeto-06-gorrion.png",
-          "width": 13,
+          "name": "objeto-09-manzana",
+          "image": "objeto-09-manzana.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-009.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-009.mp3"
     },
     {
       "id": "010",
@@ -287,29 +301,29 @@
         "No me comas, dijo el ave,",
         "que mucho susto ya tenía."
       ],
-      "background": "background-05 (2).png",
+      "background": "background-06.png",
       "characters": [
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-10.png",
+          "image": "personaje-22-temblando.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "gorrion",
-          "image": "objeto-06-gorrion.png",
-          "width": 13,
+          "name": "objeto-10-pera",
+          "image": "objeto-10-pera.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-010.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-010.mp3"
     },
     {
       "id": "011",
@@ -324,17 +338,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-11.png",
+          "image": "personaje-24-investigando.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "falling_leaves",
-      "hint": "Toca la escena para mover las hojas.",
-      "narration": "escena-011.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "objects": [
+        {
+          "name": "objeto-11-gusano",
+          "image": "objeto-11-gusano.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-happy.mp3",
+      "narration": "escena-011.mp3"
     },
     {
       "id": "012",
@@ -344,22 +365,29 @@
         "Pero cuando de atrapar gusanos hablamos,",
         "habilidades no poseía."
       ],
-      "background": "background-06.png",
+      "background": "background-09.png",
       "characters": [
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-12.png",
+          "image": "personaje-11-cazando-feroz.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías.",
-      "narration": "escena-012.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "objects": [
+        {
+          "name": "objeto-12-piedra",
+          "image": "objeto-12-piedra.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-happy.mp3",
+      "narration": "escena-012.mp3"
     },
     {
       "id": "013",
@@ -369,29 +397,29 @@
         "Siempre buscando refugio,",
         "un lugar donde dormiría."
       ],
-      "background": "background-07.png",
+      "background": "background-09.png",
       "characters": [
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-13.png",
+          "image": "personaje-19-triste.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "gusano",
-          "image": "objeto-07-gusano.png",
-          "width": 13,
+          "name": "objeto-13-pluma",
+          "image": "objeto-13-pluma.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-013.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-013.mp3"
     },
     {
       "id": "014",
@@ -401,29 +429,29 @@
         "No me comas, gritó el gusano,",
         "con grandes ojos llorosos le decía."
       ],
-      "background": "background-08.png",
+      "background": "background-09.png",
       "characters": [
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-14.png",
+          "image": "personaje-26-lagrimas.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "gusano",
-          "image": "objeto-07-gusano.png",
-          "width": 13,
+          "name": "objeto-14-raton",
+          "image": "objeto-14-raton.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-014.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-014.mp3"
     },
     {
       "id": "015",
@@ -433,29 +461,29 @@
         "Que engañado había sido",
         "por el gorrión de la frutería."
       ],
-      "background": "background-09.png",
+      "background": "background-10.png",
       "characters": [
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-15.png",
+          "image": "personaje-20-preguntando.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "gorrion",
-          "image": "objeto-06-gorrion.png",
-          "width": 13,
+          "name": "objeto-15-pescado",
+          "image": "objeto-15-pescado.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-015.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-015.mp3"
     },
     {
       "id": "016",
@@ -470,24 +498,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-16.png",
+          "image": "personaje-10-camiando-izquierda.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "raton",
-          "image": "objeto-08-raton.png",
-          "width": 13,
+          "name": "objeto-16-pan",
+          "image": "objeto-16-pan.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-016.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-016.mp3"
     },
     {
       "id": "017",
@@ -502,24 +530,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-17.png",
+          "image": "personaje-09-cazando.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "raton",
-          "image": "objeto-08-raton.png",
-          "width": 13,
+          "name": "objeto-17-leche",
+          "image": "objeto-17-leche.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-017.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-happy.mp3",
+      "narration": "escena-017.mp3"
     },
     {
       "id": "018",
@@ -534,17 +562,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-18.png",
+          "image": "personaje-31-llanto.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías.",
-      "narration": "escena-018.mp3",
-      "music": "music-sad.mp3"
+      "objects": [
+        {
+          "name": "objeto-18-gota",
+          "image": "objeto-18-gota.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-sad.mp3",
+      "narration": "escena-018.mp3"
     },
     {
       "id": "019",
@@ -559,17 +594,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-19.png",
+          "image": "personaje-19-triste.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías.",
-      "narration": "escena-019.mp3",
-      "music": "music-sad.mp3"
+      "objects": [
+        {
+          "name": "objeto-19-paraguas",
+          "image": "objeto-19-paraguas.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-sad.mp3",
+      "narration": "escena-019.mp3"
     },
     {
       "id": "020",
@@ -584,24 +626,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-20.png",
+          "image": "personaje-22-temblando.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "corazon",
-          "image": "objeto-09-corazon.png",
-          "width": 13,
+          "name": "objeto-20-estrella",
+          "image": "objeto-20-estrella.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-020.mp3",
-      "music": "music-sad.mp3"
+      "music": "music-sad.mp3",
+      "narration": "escena-020.mp3"
     },
     {
       "id": "021",
@@ -616,24 +658,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-21.png",
+          "image": "personaje-03-mirada-tierna.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "corazon",
-          "image": "objeto-09-corazon.png",
-          "width": 13,
+          "name": "objeto-21-auto",
+          "image": "objeto-21-auto.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-021.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-home.mp3",
+      "narration": "escena-021.mp3"
     },
     {
       "id": "022",
@@ -648,24 +690,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-22.png",
+          "image": "personaje-04-dudoso.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "corazon",
-          "image": "objeto-09-corazon.png",
-          "width": 13,
+          "name": "objeto-22-flor",
+          "image": "objeto-22-flor.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-022.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-home.mp3",
+      "narration": "escena-022.mp3"
     },
     {
       "id": "023",
@@ -680,17 +722,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-23.png",
+          "image": "personaje-21-cariñoso.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías.",
-      "narration": "escena-023.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "objects": [
+        {
+          "name": "objeto-23-pelota",
+          "image": "objeto-23-pelota.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-home.mp3",
+      "narration": "escena-023.mp3"
     },
     {
       "id": "024",
@@ -705,24 +754,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-24.png",
+          "image": "personaje-32-durmiendo-profundo.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "estrella",
-          "image": "objeto-05-estrella.png",
-          "width": 13,
+          "name": "objeto-24-osito",
+          "image": "objeto-24-osito.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-024.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-home.mp3",
+      "narration": "escena-024.mp3"
     },
     {
       "id": "025",
@@ -737,24 +786,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-25.png",
+          "image": "personaje-30-sonriendo.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "corazon",
-          "image": "objeto-09-corazon.png",
-          "width": 13,
+          "name": "objeto-25-biberon",
+          "image": "objeto-25-biberon.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-025.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-home.mp3",
+      "narration": "escena-025.mp3"
     },
     {
       "id": "026",
@@ -769,17 +818,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-26.png",
+          "image": "personaje-12-relajado.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías.",
-      "narration": "escena-026.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "objects": [
+        {
+          "name": "objeto-26-chupete",
+          "image": "objeto-26-chupete.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-home.mp3",
+      "narration": "escena-026.mp3"
     },
     {
       "id": "027",
@@ -794,17 +850,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-27.png",
+          "image": "personaje-18-dudoso.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
-      "objects": [],
-      "interaction": "touch_cat",
-      "hint": "Toca a Zacarías.",
-      "narration": "escena-027.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "objects": [
+        {
+          "name": "objeto-27-huellas",
+          "image": "objeto-27-huellas.png",
+          "width": 11,
+          "random": true
+        }
+      ],
+      "interaction": "find_object",
+      "hint": "Encuentra el objeto escondido.",
+      "music": "music-home.mp3",
+      "narration": "escena-027.mp3"
     },
     {
       "id": "028",
@@ -819,40 +882,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-17.png",
-          "x": 38,
-          "y": 88,
-          "width": 25
-        },
-        {
-          "name": "josefa",
-          "folder": "josefa",
-          "image": "personaje-01.png",
-          "x": 60,
-          "y": 88,
-          "width": 23
-        },
-        {
-          "name": "hamburguesita",
-          "folder": "hamburguesita",
-          "image": "personaje-01.png",
-          "x": 79,
-          "y": 88,
-          "width": 23
+          "image": "personaje-27-saltando-feliz.png",
+          "x": 52,
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "corazon",
-          "image": "objeto-09-corazon.png",
-          "width": 13,
+          "name": "objeto-28-medalla",
+          "image": "objeto-28-medalla.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-028.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-ending.mp3",
+      "narration": "escena-028.mp3"
     },
     {
       "id": "029",
@@ -864,24 +911,24 @@
         {
           "name": "zacarias",
           "folder": "zacarias",
-          "image": "personaje-29.png",
+          "image": "personaje-28-estirando-feliz.png",
           "x": 52,
-          "y": 88,
-          "width": 30
+          "y": 91,
+          "width": 31
         }
       ],
       "objects": [
         {
-          "name": "estrella",
-          "image": "objeto-05-estrella.png",
-          "width": 13,
+          "name": "objeto-29-estrella-dorada",
+          "image": "objeto-29-estrella-dorada.png",
+          "width": 11,
           "random": true
         }
       ],
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
-      "narration": "escena-029.mp3",
-      "music": "arcoiris-de-do.mp3"
+      "music": "music-ending.mp3",
+      "narration": "escena-029.mp3"
     }
   ]
 }
