@@ -16,7 +16,12 @@ function setupStageInteraction(s){stage.onclick=null;if(s.interaction==="falling
 function completeScene(id){completed.add(id);rewardText.textContent="⭐ ¡Muy bien!";stage.animate([{filter:"brightness(1)"},{filter:"brightness(1.18)"},{filter:"brightness(1)"}],{duration:650})}
 function playPurr(){try{purrAudio.currentTime=0;purrAudio.play()}catch(e){}}
 function createLeaves(){effectsLayer.innerHTML="";const a=["🍂","🍁","🍃"];for(let i=0;i<12;i++){const s=document.createElement("span");s.className="particle";s.textContent=a[i%a.length];s.style.left=`${5+Math.random()*90}%`;s.style.top=`${Math.random()*8}%`;s.style.animationDelay=`${Math.random()*.6}s`;effectsLayer.appendChild(s)}setTimeout(()=>effectsLayer.innerHTML="",2500)}
-function playSceneAudio(s){if(musicEnabled&&s.music){if(!currentMusic||!currentMusic.src.endsWith(s.music)){stopMusic();currentMusic=new Audio(`assets/music/${s.music}`);currentMusic.loop=true;currentMusic.volume=.12;currentMusic.play().catch(()=>{})}}if(narrationEnabled&&s.narration){currentNarration=new Audio(`assets/narration/${s.narration}`);currentNarration.volume=1;currentNarration.play().catch(()=>{})}}
+function playSceneAudio(s){if(musicEnabled&&s.music){if(!currentMusic||!currentMusic.src.endsWith(s.music)){stopMusic();currentMusic=new Audio(`assets/music/${s.music}`);currentMusic.loop=true;currentMusic.volume=.12;currentMusic.play().then(()=>{
+    console.log("Música iniciada:", currentMusic.src);
+}).catch(err=>{
+    console.error("Error música:", err);
+    console.log("Ruta:", currentMusic.src);
+});}}if(narrationEnabled&&s.narration){currentNarration=new Audio(`assets/narration/${s.narration}`);currentNarration.volume=1;currentNarration.play().catch(()=>{})}}
 function stopNarration(){if(currentNarration){currentNarration.pause();currentNarration=null}}
 function stopMusic(){if(currentMusic){currentMusic.pause();currentMusic=null}}
 coverCatButton.addEventListener("click",()=>{coverCatButton.classList.add("rub");purrText.textContent="Prrrrrrrr...";playPurr();setTimeout(()=>{coverCatButton.classList.remove("rub");purrText.textContent=""},1900)});
