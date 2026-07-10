@@ -45,7 +45,7 @@
         "Si me acompañas hasta el final,",
         "te divertirás con un gatito y su valentía."
       ],
-      "background": "background-01.jpg",
+      "": "background-01.jpg",
       "characters": [
         {
           "name": "zacarias",
@@ -134,7 +134,7 @@
         "De la sutil huida",
         "del gatito Zacarías."
       ],
-      "background": "background-02.jpg",
+      "background": "background-03.jpg",
       "characters": [
         {
           "name": "zacarias",
@@ -191,7 +191,7 @@
         "No sabía a dónde iría,",
         "pero su corazón insistía: una gran aventura sería."
       ],
-      "background": "background-03.jpg",
+      "background": "background-04.jpg",
       "characters": [
         {
           "name": "zacarias",
@@ -319,7 +319,7 @@
         "Entonces comenzó la búsqueda,",
         "y entre árboles se introducía."
       ],
-      "background": "background-07.jpg",
+      "background": "background-06.jpg",
       "characters": [
         {
           "name": "zacarias",
@@ -344,7 +344,7 @@
         "Pero cuando de atrapar gusanos hablamos,",
         "habilidades no poseía."
       ],
-      "background": "background-07.jpg",
+      "background": "background-06.jpg",
       "characters": [
         {
           "name": "zacarias",
@@ -369,7 +369,7 @@
         "Siempre buscando refugio,",
         "un lugar donde dormiría."
       ],
-      "background": "background-08.jpg",
+      "background": "background-07.jpg",
       "characters": [
         {
           "name": "zacarias",
@@ -401,7 +401,7 @@
         "No me comas, gritó el gusano,",
         "con grandes ojos llorosos le decía."
       ],
-      "background": "background-09.jpg",
+      "background": "background-08.jpg",
       "characters": [
         {
           "name": "zacarias",
