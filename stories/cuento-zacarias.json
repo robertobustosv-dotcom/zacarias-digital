@@ -60,7 +60,7 @@
       "interaction": "touch_cat",
       "hint": "Toca a Zacarías.",
       "narration": "escena-002.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "003",
@@ -92,7 +92,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-003.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "004",
@@ -124,7 +124,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-004.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "005",
@@ -149,7 +149,7 @@
       "interaction": "touch_cat",
       "hint": "Toca a Zacarías.",
       "narration": "escena-005.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "006",
@@ -181,7 +181,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-006.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "007",
@@ -213,7 +213,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-007.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "008",
@@ -245,7 +245,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-008.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "009",
@@ -277,7 +277,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-009.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "010",
@@ -309,7 +309,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-010.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "011",
@@ -334,7 +334,7 @@
       "interaction": "falling_leaves",
       "hint": "Toca la escena para mover las hojas.",
       "narration": "escena-011.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "012",
@@ -359,7 +359,7 @@
       "interaction": "touch_cat",
       "hint": "Toca a Zacarías.",
       "narration": "escena-012.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "013",
@@ -391,7 +391,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-013.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "014",
@@ -423,7 +423,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-014.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "015",
@@ -455,7 +455,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-015.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "016",
@@ -487,7 +487,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-016.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "017",
@@ -519,7 +519,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-017.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "018",
@@ -633,7 +633,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-021.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "022",
@@ -665,7 +665,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-022.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "023",
@@ -690,7 +690,7 @@
       "interaction": "touch_cat",
       "hint": "Toca a Zacarías.",
       "narration": "escena-023.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "024",
@@ -722,7 +722,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-024.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "025",
@@ -754,7 +754,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-025.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "026",
@@ -779,7 +779,7 @@
       "interaction": "touch_cat",
       "hint": "Toca a Zacarías.",
       "narration": "escena-026.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "027",
@@ -804,7 +804,7 @@
       "interaction": "touch_cat",
       "hint": "Toca a Zacarías.",
       "narration": "escena-027.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "028",
@@ -852,7 +852,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-028.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     },
     {
       "id": "029",
@@ -881,7 +881,7 @@
       "interaction": "find_object",
       "hint": "Encuentra el objeto escondido.",
       "narration": "escena-029.mp3",
-      "music": "music-warm.mp3"
+      "music": "arcoiris-de-do.mp3"
     }
   ]
 }
