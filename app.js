@@ -25,7 +25,27 @@ function playSceneAudio(s){if(musicEnabled&&s.music){if(!currentMusic||!currentM
 function stopNarration(){if(currentNarration){currentNarration.pause();currentNarration=null}}
 function stopMusic(){if(currentMusic){currentMusic.pause();currentMusic=null}}
 coverCatButton.addEventListener("click",()=>{coverCatButton.classList.add("rub");purrText.textContent="Prrrrrrrr...";playPurr();setTimeout(()=>{coverCatButton.classList.remove("rub");purrText.textContent=""},1900)});
-startBtn.addEventListener("click",()=>{stopCoverAnimation();cover.classList.add("hidden");reader.classList.remove("hidden");renderScene(0)});
+startBtn.addEventListener("click", () => {
+  stopCoverAnimation();
+
+  cover.classList.add("hidden");
+  reader.classList.remove("hidden");
+
+  renderScene(0);
+
+  // Inicia la música después del clic del usuario
+  if (scenes[0]?.music) {
+    stopMusic();
+
+    currentMusic = new Audio(`assets/music/${scenes[0].music}`);
+    currentMusic.loop = true;
+    currentMusic.volume = 0.25;
+
+    currentMusic.play().catch(error => {
+      console.error("Error música:", error);
+    });
+  }
+});
 homeBtn.addEventListener("click",()=>{stopNarration();stopMusic();reader.classList.add("hidden");cover.classList.remove("hidden");startCoverAnimation()});
 prevBtn.addEventListener("click",()=>renderScene(currentScene-1));nextBtn.addEventListener("click",()=>renderScene(currentScene+1));
 musicBtn.addEventListener("click",()=>{musicEnabled=!musicEnabled;musicBtn.textContent=musicEnabled?"🎵":"🔕";if(musicEnabled)playSceneAudio(scenes[currentScene]);else stopMusic()});
